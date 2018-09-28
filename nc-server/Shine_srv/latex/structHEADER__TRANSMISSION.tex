@@ -1,0 +1,81 @@
+\hypertarget{structHEADER__TRANSMISSION}{\section{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N Struct Reference}
+\label{structHEADER__TRANSMISSION}\index{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}}
+}
+
+
+{\ttfamily \#include $<$Data\-Definition.\-h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structHEADER__TRANSMISSION_a74de1a2343e132bf28eb6e83b4601d34}{padding}
+\begin{DoxyCompactList}\small\item\em (1 byte) is used to identify the last chunk for requested file. \end{DoxyCompactList}\item 
+int \hyperlink{structHEADER__TRANSMISSION_abee64c077b815db300d99d1e2a273af7}{num\-\_\-chunks}
+\begin{DoxyCompactList}\small\item\em define how many chunks are send together. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{structHEADER__TRANSMISSION_ae1d8e1fcc8178250b212f77325022424}{id\-\_\-utenti}
+\begin{DoxyCompactList}\small\item\em a list of users identifiers. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{structHEADER__TRANSMISSION_a7d6396f1a9a35defc1b44e00c663b412}{id\-\_\-files}
+\begin{DoxyCompactList}\small\item\em a list of files identifiers. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{structHEADER__TRANSMISSION_a3fa5dd88f6fc08f8c64eaee74408ce0e}{id\-\_\-chunks}
+\begin{DoxyCompactList}\small\item\em a list of chunks identifiers. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{structHEADER__TRANSMISSION_a08672f07c936f6bc4127fe255ea0ce7e}{size\-\_\-package}
+\begin{DoxyCompactList}\small\item\em a list of the sizes of every chunk send. This list is useful when padding is 1. \end{DoxyCompactList}\item 
+int \hyperlink{structHEADER__TRANSMISSION_a0654a40688064ef0925896891de48b43}{size\-Tot}
+\begin{DoxyCompactList}\small\item\em Total package size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structHEADER__TRANSMISSION_a3fa5dd88f6fc08f8c64eaee74408ce0e}{\index{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}!id\-\_\-chunks@{id\-\_\-chunks}}
+\index{id\-\_\-chunks@{id\-\_\-chunks}!HEADER_TRANSMISSION@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}}
+\subsubsection[{id\-\_\-chunks}]{\setlength{\rightskip}{0pt plus 5cm}H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-::id\-\_\-chunks}}\label{structHEADER__TRANSMISSION_a3fa5dd88f6fc08f8c64eaee74408ce0e}
+
+
+a list of chunks identifiers. 
+
+\hypertarget{structHEADER__TRANSMISSION_a7d6396f1a9a35defc1b44e00c663b412}{\index{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}!id\-\_\-files@{id\-\_\-files}}
+\index{id\-\_\-files@{id\-\_\-files}!HEADER_TRANSMISSION@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}}
+\subsubsection[{id\-\_\-files}]{\setlength{\rightskip}{0pt plus 5cm}H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-::id\-\_\-files}}\label{structHEADER__TRANSMISSION_a7d6396f1a9a35defc1b44e00c663b412}
+
+
+a list of files identifiers. 
+
+\hypertarget{structHEADER__TRANSMISSION_ae1d8e1fcc8178250b212f77325022424}{\index{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}!id\-\_\-utenti@{id\-\_\-utenti}}
+\index{id\-\_\-utenti@{id\-\_\-utenti}!HEADER_TRANSMISSION@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}}
+\subsubsection[{id\-\_\-utenti}]{\setlength{\rightskip}{0pt plus 5cm}H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-::id\-\_\-utenti}}\label{structHEADER__TRANSMISSION_ae1d8e1fcc8178250b212f77325022424}
+
+
+a list of users identifiers. 
+
+\hypertarget{structHEADER__TRANSMISSION_abee64c077b815db300d99d1e2a273af7}{\index{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}!num\-\_\-chunks@{num\-\_\-chunks}}
+\index{num\-\_\-chunks@{num\-\_\-chunks}!HEADER_TRANSMISSION@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}}
+\subsubsection[{num\-\_\-chunks}]{\setlength{\rightskip}{0pt plus 5cm}H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-::num\-\_\-chunks}}\label{structHEADER__TRANSMISSION_abee64c077b815db300d99d1e2a273af7}
+
+
+define how many chunks are send together. 
+
+\hypertarget{structHEADER__TRANSMISSION_a74de1a2343e132bf28eb6e83b4601d34}{\index{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}!padding@{padding}}
+\index{padding@{padding}!HEADER_TRANSMISSION@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}}
+\subsubsection[{padding}]{\setlength{\rightskip}{0pt plus 5cm}H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-::padding}}\label{structHEADER__TRANSMISSION_a74de1a2343e132bf28eb6e83b4601d34}
+
+
+(1 byte) is used to identify the last chunk for requested file. 
+
+\hypertarget{structHEADER__TRANSMISSION_a08672f07c936f6bc4127fe255ea0ce7e}{\index{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}!size\-\_\-package@{size\-\_\-package}}
+\index{size\-\_\-package@{size\-\_\-package}!HEADER_TRANSMISSION@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}}
+\subsubsection[{size\-\_\-package}]{\setlength{\rightskip}{0pt plus 5cm}H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-::size\-\_\-package}}\label{structHEADER__TRANSMISSION_a08672f07c936f6bc4127fe255ea0ce7e}
+
+
+a list of the sizes of every chunk send. This list is useful when padding is 1. 
+
+\hypertarget{structHEADER__TRANSMISSION_a0654a40688064ef0925896891de48b43}{\index{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}!size\-Tot@{size\-Tot}}
+\index{size\-Tot@{size\-Tot}!HEADER_TRANSMISSION@{H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N}}
+\subsubsection[{size\-Tot}]{\setlength{\rightskip}{0pt plus 5cm}H\-E\-A\-D\-E\-R\-\_\-\-T\-R\-A\-N\-S\-M\-I\-S\-S\-I\-O\-N\-::size\-Tot}}\label{structHEADER__TRANSMISSION_a0654a40688064ef0925896891de48b43}
+
+
+Total package size. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DataDefinition_8h}{Data\-Definition.\-h}\end{DoxyCompactItemize}

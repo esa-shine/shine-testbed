@@ -1,0 +1,13 @@
+ {
+	"name": "node_json_web_app",
+	"version": "1.0.0",
+	"description": "Node.js cache node",
+	"author": "Fabio Giangrande",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.13.3"
+	}
+}

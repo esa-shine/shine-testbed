@@ -1,0 +1,12 @@
+<map id="check_memory_allocation_1D" name="check_memory_allocation_1D">
+<area shape="rect" id="node2" href="$ConflictGraph_8h.html#a6de92953bce9d470b645baaa6c546c8c" title="makeNodes" alt="" coords="261,5,353,32"/>
+<area shape="rect" id="node7" href="$DecodingInput_8h.html#ad13f010e00cde34fa1346751919d194d" title="_allocArrays" alt="" coords="259,56,354,83"/>
+<area shape="rect" id="node9" href="$LibShine_8h.html#a08f3e428f8418d11660f3c3847fdf12b" title="makeCache" alt="" coords="617,104,709,131"/>
+<area shape="rect" id="node10" href="$EnvironmentSetup_8h.html#a8b78d1d7ffbdd78e9d0da690a2cf9ca4" title="_allocVariables" alt="" coords="251,157,362,184"/>
+<area shape="rect" id="node3" href="$ConflictGraph_8h.html#a1cc64a8f4dc3bd9f1c991abd75432539" title="conflictGraphGenerator" alt="" coords="411,5,567,32"/>
+<area shape="rect" id="node4" href="$server_8cpp.html#ab831c44f8ddb7ea2b41ada3f8c263d80" title="taskUdp" alt="" coords="627,9,698,36"/>
+<area shape="rect" id="node5" href="$server_8cpp.html#a7b062b307f683d3473961f5191aa892b" title="taskTCP" alt="" coords="757,35,832,61"/>
+<area shape="rect" id="node6" href="$server_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="880,67,931,93"/>
+<area shape="rect" id="node8" href="$DecodingInput_8h.html#a28260d6d34d82ba38bf908322d9b0254" title="fromArrayToMatrix" alt="" coords="424,56,555,83"/>
+<area shape="rect" id="node11" href="$EnvironmentSetup_8h.html#a9622719f219854837b4710801b770278" title="setEnvironment" alt="" coords="433,157,546,184"/>
+</map>

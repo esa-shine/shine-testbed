@@ -1,0 +1,68 @@
+{
+	"0": { 
+		"name": "0",
+		"value": 0,
+		"size": 0,
+		"numChunks": 0
+	},
+	"1": { 
+		"name": "ESA_Destination_Moon-Audio.mp4",
+		"value": 0,
+		"size": 8321805,
+		"numChunks": 131
+	},
+	"2": { 
+		"name": "ESA_Destination_Moon-Video.mp4",
+		"value": 0,
+		"size": 76539489,
+		"numChunks": 1196
+	},
+	"3": { 
+		"name": "Meet_ESA_-_The_Space_Agency_For_Europe-Audio.mp4",
+		"value": 0,
+		"size": 4034335,
+		"numChunks": 64
+	},
+	"4": { 
+		"name": "Meet_ESA_-_The_Space_Agency_For_Europe-Video.mp4",
+		"value": 0,
+		"size": 46077018,
+		"numChunks": 720
+	},
+	"5": { 
+		"name": "Simply_Red_-_Fake-Audio.mp4",
+		"value": 0,
+		"size": 2881910,
+		"numChunks": 46
+	},
+	"6": { 
+		"name": "Simply_Red_-_Fake-Video.mp4",
+		"value": 0,
+		"size": 12598848,
+		"numChunks": 197
+	},
+	"7": { 
+		"name": "ESA_Destination_Moon.webm",
+		"value": 0,
+		"size": 67486850,
+		"numChunks": 1055
+	},
+	"8": { 
+		"name": "Meet_ESA_-_The_Space_Agency_For_Europe.webm",
+		"value": 0,
+		"size": 32353193,
+		"numChunks": 506
+	},
+	"9": { 
+		"name": "Napoli_Campione.webm",
+		"value": 0,
+		"size": 3975385,
+		"numChunks": 63
+	},
+	"10": { 
+		"name": "Simply_Red_-_Fake.webm",
+		"value": 0,
+		"size": 3975385,
+		"numChunks": 424
+	}
+}

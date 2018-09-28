@@ -1,0 +1,17 @@
+{
+	"name": "node_json_web_app",
+	"version": "1.0.0",
+	"description": "Node.js cache node",
+	"author": "Cris",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.3",
+		"formidable": "^1.2.1",
+		"http-proxy": "^1.17.0",
+		"ws": "^5.2.0"
+	}
+}

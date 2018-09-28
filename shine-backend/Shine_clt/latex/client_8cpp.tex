@@ -1,0 +1,88 @@
+\hypertarget{client_8cpp}{\section{client.\-cpp File Reference}
+\label{client_8cpp}\index{client.\-cpp@{client.\-cpp}}
+}
+
+
+The main file to use the client.  
+
+
+{\ttfamily \#include \char`\"{}Coding\-Decoding\-Data.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Lib\-Shine.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$arpa/inet.\-h$>$}\\*
+{\ttfamily \#include $<$cstring$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$netdb.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{client_8cpp_a06a4f92382a282853f27039c63fb0c91}{\#define {\bfseries H\-E\-L\-L\-O\-\_\-\-P\-O\-R\-T}~12345}\label{client_8cpp_a06a4f92382a282853f27039c63fb0c91}
+
+\item 
+\hypertarget{client_8cpp_aa869892c2393564caaf8c65af8225e6b}{\#define {\bfseries H\-E\-L\-L\-O\-\_\-\-G\-R\-O\-U\-P}~\char`\"{}225.\-0.\-0.\-37\char`\"{}}\label{client_8cpp_aa869892c2393564caaf8c65af8225e6b}
+
+\item 
+\hypertarget{client_8cpp_aad9be19ed0c1f5871c9932df83023026}{\#define {\bfseries M\-S\-G\-B\-U\-F\-S\-I\-Z\-E}~1024}\label{client_8cpp_aad9be19ed0c1f5871c9932df83023026}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{client_8cpp_ab831c44f8ddb7ea2b41ada3f8c263d80}{task\-Udp} (void $\ast$)
+\item 
+int \hyperlink{client_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{client_8cpp_aa9a265bfabda02a49e53d82a904308e1}{pthread\-\_\-t {\bfseries thread\-A} \mbox{[}3\mbox{]}}\label{client_8cpp_aa9a265bfabda02a49e53d82a904308e1}
+
+\item 
+\hypertarget{client_8cpp_a939bd384596ea8e992d652270a133b55}{vector$<$ char $>$ {\bfseries coded\-\_\-data}}\label{client_8cpp_a939bd384596ea8e992d652270a133b55}
+
+\item 
+\hypertarget{client_8cpp_a1e1e165e89d4b4809ccbbe7aada77077}{\hyperlink{structHEADER__TRANSMISSION}{header\-\_\-transmission} {\bfseries header}}\label{client_8cpp_a1e1e165e89d4b4809ccbbe7aada77077}
+
+\item 
+\hypertarget{client_8cpp_afc67ef5edf9d0bc08795a14a07d8633c}{int {\bfseries id\-\_\-requested\-\_\-file} = -\/I\-N\-F}\label{client_8cpp_afc67ef5edf9d0bc08795a14a07d8633c}
+
+\item 
+\hypertarget{client_8cpp_a2083d0af7adbc4404b62ae6786b96f20}{int {\bfseries id\-\_\-utente} =0}\label{client_8cpp_a2083d0af7adbc4404b62ae6786b96f20}
+
+\item 
+\hyperlink{structConfig}{Config} \hyperlink{client_8cpp_a4a8dd3a2de125b72d4fe6251a0a271b5}{config}
+\item 
+\hypertarget{client_8cpp_a36dadae3093227b3e1c48a749e0c2d68}{log4cpp\-::\-Appender $\ast$ {\bfseries appender1}}\label{client_8cpp_a36dadae3093227b3e1c48a749e0c2d68}
+
+\item 
+\hypertarget{client_8cpp_a65af033419450d60618533fde8ab81b0}{log4cpp\-::\-Category \& {\bfseries root} = log4cpp\-::\-Category\-::get\-Root()}\label{client_8cpp_a65af033419450d60618533fde8ab81b0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main file to use the client. 
+
+\subsection{Function Documentation}
+\hypertarget{client_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{client.\-cpp@{client.\-cpp}!main@{main}}
+\index{main@{main}!client.cpp@{client.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{client_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+main function this function open a T\-C\-P connection to the server and run a thread to Listen U\-D\-P \hypertarget{client_8cpp_ab831c44f8ddb7ea2b41ada3f8c263d80}{\index{client.\-cpp@{client.\-cpp}!task\-Udp@{task\-Udp}}
+\index{task\-Udp@{task\-Udp}!client.cpp@{client.\-cpp}}
+\subsubsection[{task\-Udp}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ task\-Udp (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{prt}
+\end{DoxyParamCaption}
+)}}\label{client_8cpp_ab831c44f8ddb7ea2b41ada3f8c263d80}
+Thread for recive data. This thread open a U\-D\-P connection for listen U\-D\-P and are executed the algorithms to decode and save data. 
+
+\subsection{Variable Documentation}
+\hypertarget{client_8cpp_a4a8dd3a2de125b72d4fe6251a0a271b5}{\index{client.\-cpp@{client.\-cpp}!config@{config}}
+\index{config@{config}!client.cpp@{client.\-cpp}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config} config}}\label{client_8cpp_a4a8dd3a2de125b72d4fe6251a0a271b5}
+Struct for loading configuration file .ini 

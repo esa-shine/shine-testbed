@@ -1,0 +1,289 @@
+\hypertarget{server_8cpp}{\section{server.\-cpp File Reference}
+\label{server_8cpp}\index{server.\-cpp@{server.\-cpp}}
+}
+
+
+The main File to use the Server.  
+
+
+{\ttfamily \#include \char`\"{}Check\-Function.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Environment\-Setup.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Decoding\-Input.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conflict\-Graph.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}random\-Handler.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Data\-Definition.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}grasp.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hgcc.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Lib\-Shine.\-h\char`\"{}}\\*
+Include dependency graph for server.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{server_8cpp_a23f1debe2ae14e78e7387a939af3f493}{H\-E\-L\-L\-O\-P\-O\-R\-T}~12345
+\item 
+\#define \hyperlink{server_8cpp_ae7053a45ca9abc815ac0c338e826d4d0}{H\-E\-L\-L\-O\-G\-R\-O\-U\-P}~\char`\"{}225.\-0.\-0.\-37\char`\"{}
+\item 
+\#define \hyperlink{server_8cpp_a0f4d114d4772fbfc3ff96131cce924aa}{M\-A\-X\-C\-O\-N\-N}~10
+\item 
+\#define \hyperlink{server_8cpp_ace6c609072c3b2eaca1e74b065d61dc4}{M\-A\-X\-C\-L\-I\-E\-N\-T}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{server_8cpp_a7b062b307f683d3473961f5191aa892b}{task\-T\-C\-P} (void $\ast$)
+\item 
+void $\ast$ \hyperlink{server_8cpp_ab831c44f8ddb7ea2b41ada3f8c263d80}{task\-Udp} (void $\ast$)
+\item 
+void $\ast$ \hyperlink{server_8cpp_a0317951b3624c27a92d6f27046f1aeb4}{Task\-Trasm} (void $\ast$)
+\item 
+int \hyperlink{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ sockaddr\-\_\-in $>$ \hyperlink{server_8cpp_abf206c46a3898f1285ed3bbf79a38567}{fd}
+\item 
+vector$<$ vector$<$ char $>$ $>$ \hyperlink{server_8cpp_abd8d30b70219f677a928946e0ab7c88a}{coded\-\_\-data}
+\item 
+\hyperlink{DataDefinition_8h_a322105278c15798a807c79187b83e7f7}{header\-\_\-transmission} $\ast$ \hyperlink{server_8cpp_ac1276b47b6f7add1f7bd9350d2f9cb29}{header}
+\item 
+int \hyperlink{server_8cpp_a616a568c4c19cf029610e5abc4e70150}{req\-File}
+\item 
+\hyperlink{DataDefinition_8h_aa8ca5572763177379406da03176d0ef9}{data\-\_\-matrix} \hyperlink{server_8cpp_aae9fcbe0ed0ac37c492508691173561d}{data}
+\item 
+pthread\-\_\-t \hyperlink{server_8cpp_aaa1eccce82dcaa067c3edf5e425db6f2}{thread\-A} \mbox{[}\hyperlink{server_8cpp_ace6c609072c3b2eaca1e74b065d61dc4}{M\-A\-X\-C\-L\-I\-E\-N\-T}\mbox{]}
+\item 
+int \hyperlink{server_8cpp_a781b945b35d321e2e9a3e7d3cfc42f93}{p\-Id}
+\item 
+int \hyperlink{server_8cpp_ac2fde7a7aeb154a1e4660935c9526919}{port\-No}
+\item 
+int \hyperlink{server_8cpp_ad7bf504d3660ada99e01ae5cc6f26bdf}{listen\-Fd}
+\item 
+int \hyperlink{server_8cpp_affd36f8acb85b65f5c2856d0a5375116}{no\-Thread}
+\item 
+int \hyperlink{server_8cpp_aa2631f25e19535d403ff16ce392a2ab3}{numero\-\_\-utenti} =\hyperlink{server_8cpp_affd36f8acb85b65f5c2856d0a5375116}{no\-Thread}
+\item 
+bool \hyperlink{server_8cpp_a941327d904d4e8f11687f89b6daa8ac1}{primo\-C\-M} =false
+\item 
+int \hyperlink{server_8cpp_a22c4d1a7b939abe2437f400756e459ee}{trasmissione\-Attiva} =0
+\item 
+\hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{output\-For\-Coloring}
+\item 
+int \hyperlink{server_8cpp_a77d12d83849f64ae977d6dabf5dfbea2}{G\-R\-A\-S\-P} = 1
+\item 
+int $\ast$ \hyperlink{server_8cpp_acb522a001717637b1805206987acad27}{coloring} = N\-U\-L\-L
+\item 
+int \hyperlink{server_8cpp_a08ddc6ed3452290d5165e02bbe46d08b}{n\-\_\-col}
+\item 
+\hyperlink{structConfig}{Config} \hyperlink{server_8cpp_a4a8dd3a2de125b72d4fe6251a0a271b5}{config}
+\item 
+log4cpp\-::\-Appender $\ast$ \hyperlink{server_8cpp_a36dadae3093227b3e1c48a749e0c2d68}{appender1}
+\item 
+log4cpp\-::\-Category \& \hyperlink{server_8cpp_a65af033419450d60618533fde8ab81b0}{root} = log4cpp\-::\-Category\-::get\-Root()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The main File to use the Server. 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{server_8cpp_ae7053a45ca9abc815ac0c338e826d4d0}{\index{server.\-cpp@{server.\-cpp}!H\-E\-L\-L\-O\-G\-R\-O\-U\-P@{H\-E\-L\-L\-O\-G\-R\-O\-U\-P}}
+\index{H\-E\-L\-L\-O\-G\-R\-O\-U\-P@{H\-E\-L\-L\-O\-G\-R\-O\-U\-P}!server.cpp@{server.\-cpp}}
+\subsubsection[{H\-E\-L\-L\-O\-G\-R\-O\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-E\-L\-L\-O\-G\-R\-O\-U\-P~\char`\"{}225.\-0.\-0.\-37\char`\"{}}}\label{server_8cpp_ae7053a45ca9abc815ac0c338e826d4d0}
+\hypertarget{server_8cpp_a23f1debe2ae14e78e7387a939af3f493}{\index{server.\-cpp@{server.\-cpp}!H\-E\-L\-L\-O\-P\-O\-R\-T@{H\-E\-L\-L\-O\-P\-O\-R\-T}}
+\index{H\-E\-L\-L\-O\-P\-O\-R\-T@{H\-E\-L\-L\-O\-P\-O\-R\-T}!server.cpp@{server.\-cpp}}
+\subsubsection[{H\-E\-L\-L\-O\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\-E\-L\-L\-O\-P\-O\-R\-T~12345}}\label{server_8cpp_a23f1debe2ae14e78e7387a939af3f493}
+\hypertarget{server_8cpp_ace6c609072c3b2eaca1e74b065d61dc4}{\index{server.\-cpp@{server.\-cpp}!M\-A\-X\-C\-L\-I\-E\-N\-T@{M\-A\-X\-C\-L\-I\-E\-N\-T}}
+\index{M\-A\-X\-C\-L\-I\-E\-N\-T@{M\-A\-X\-C\-L\-I\-E\-N\-T}!server.cpp@{server.\-cpp}}
+\subsubsection[{M\-A\-X\-C\-L\-I\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-C\-L\-I\-E\-N\-T~10}}\label{server_8cpp_ace6c609072c3b2eaca1e74b065d61dc4}
+\hypertarget{server_8cpp_a0f4d114d4772fbfc3ff96131cce924aa}{\index{server.\-cpp@{server.\-cpp}!M\-A\-X\-C\-O\-N\-N@{M\-A\-X\-C\-O\-N\-N}}
+\index{M\-A\-X\-C\-O\-N\-N@{M\-A\-X\-C\-O\-N\-N}!server.cpp@{server.\-cpp}}
+\subsubsection[{M\-A\-X\-C\-O\-N\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-C\-O\-N\-N~10}}\label{server_8cpp_a0f4d114d4772fbfc3ff96131cce924aa}
+
+
+\subsection{Function Documentation}
+\hypertarget{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{\index{server.\-cpp@{server.\-cpp}!main@{main}}
+\index{main@{main}!server.cpp@{server.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+main function this is where client connects. svr will hang in this mode until client conn 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{server_8cpp_a7b062b307f683d3473961f5191aa892b}{\index{server.\-cpp@{server.\-cpp}!task\-T\-C\-P@{task\-T\-C\-P}}
+\index{task\-T\-C\-P@{task\-T\-C\-P}!server.cpp@{server.\-cpp}}
+\subsubsection[{task\-T\-C\-P}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ task\-T\-C\-P (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{a}
+\end{DoxyParamCaption}
+)}}\label{server_8cpp_a7b062b307f683d3473961f5191aa892b}
+T\-C\-P wait Thread through which comes Miss As soon as I get a miss, update the table-\/$>$ for each miss i do this so when coding, the algorithm takes the miss as the required files
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp_a7b062b307f683d3473961f5191aa892b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{server_8cpp_a7b062b307f683d3473961f5191aa892b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{server_8cpp_a0317951b3624c27a92d6f27046f1aeb4}{\index{server.\-cpp@{server.\-cpp}!Task\-Trasm@{Task\-Trasm}}
+\index{Task\-Trasm@{Task\-Trasm}!server.cpp@{server.\-cpp}}
+\subsubsection[{Task\-Trasm}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Task\-Trasm (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{server_8cpp_a0317951b3624c27a92d6f27046f1aeb4}
+Thread for trasmitting. In this thread are executed the algorithms to code and trasmitting data. 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{server_8cpp_a0317951b3624c27a92d6f27046f1aeb4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp_a0317951b3624c27a92d6f27046f1aeb4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{server_8cpp_ab831c44f8ddb7ea2b41ada3f8c263d80}{\index{server.\-cpp@{server.\-cpp}!task\-Udp@{task\-Udp}}
+\index{task\-Udp@{task\-Udp}!server.cpp@{server.\-cpp}}
+\subsubsection[{task\-Udp}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ task\-Udp (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{u}
+\end{DoxyParamCaption}
+)}}\label{server_8cpp_ab831c44f8ddb7ea2b41ada3f8c263d80}
+Thread to send Multicast
+
+U\-D\-P multicast send wait for other miss for a fixed time 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{server_8cpp_ab831c44f8ddb7ea2b41ada3f8c263d80_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{server_8cpp_ab831c44f8ddb7ea2b41ada3f8c263d80_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{server_8cpp_a36dadae3093227b3e1c48a749e0c2d68}{\index{server.\-cpp@{server.\-cpp}!appender1@{appender1}}
+\index{appender1@{appender1}!server.cpp@{server.\-cpp}}
+\subsubsection[{appender1}]{\setlength{\rightskip}{0pt plus 5cm}log4cpp\-::\-Appender$\ast$ appender1}}\label{server_8cpp_a36dadae3093227b3e1c48a749e0c2d68}
+\hypertarget{server_8cpp_abd8d30b70219f677a928946e0ab7c88a}{\index{server.\-cpp@{server.\-cpp}!coded\-\_\-data@{coded\-\_\-data}}
+\index{coded\-\_\-data@{coded\-\_\-data}!server.cpp@{server.\-cpp}}
+\subsubsection[{coded\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ vector$<$char$>$ $>$ coded\-\_\-data}}\label{server_8cpp_abd8d30b70219f677a928946e0ab7c88a}
+Number of trasmission x Size package; \hypertarget{server_8cpp_acb522a001717637b1805206987acad27}{\index{server.\-cpp@{server.\-cpp}!coloring@{coloring}}
+\index{coloring@{coloring}!server.cpp@{server.\-cpp}}
+\subsubsection[{coloring}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ coloring = N\-U\-L\-L}}\label{server_8cpp_acb522a001717637b1805206987acad27}
+\hypertarget{server_8cpp_a4a8dd3a2de125b72d4fe6251a0a271b5}{\index{server.\-cpp@{server.\-cpp}!config@{config}}
+\index{config@{config}!server.cpp@{server.\-cpp}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config} config}}\label{server_8cpp_a4a8dd3a2de125b72d4fe6251a0a271b5}
+Struct for loading configuration file .ini \hypertarget{server_8cpp_aae9fcbe0ed0ac37c492508691173561d}{\index{server.\-cpp@{server.\-cpp}!data@{data}}
+\index{data@{data}!server.cpp@{server.\-cpp}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf data\-\_\-matrix} data}}\label{server_8cpp_aae9fcbe0ed0ac37c492508691173561d}
+Shared struct \hypertarget{server_8cpp_abf206c46a3898f1285ed3bbf79a38567}{\index{server.\-cpp@{server.\-cpp}!fd@{fd}}
+\index{fd@{fd}!server.cpp@{server.\-cpp}}
+\subsubsection[{fd}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$sockaddr\-\_\-in$>$ fd}}\label{server_8cpp_abf206c46a3898f1285ed3bbf79a38567}
+\hypertarget{server_8cpp_a77d12d83849f64ae977d6dabf5dfbea2}{\index{server.\-cpp@{server.\-cpp}!G\-R\-A\-S\-P@{G\-R\-A\-S\-P}}
+\index{G\-R\-A\-S\-P@{G\-R\-A\-S\-P}!server.cpp@{server.\-cpp}}
+\subsubsection[{G\-R\-A\-S\-P}]{\setlength{\rightskip}{0pt plus 5cm}int G\-R\-A\-S\-P = 1}}\label{server_8cpp_a77d12d83849f64ae977d6dabf5dfbea2}
+\hypertarget{server_8cpp_ac1276b47b6f7add1f7bd9350d2f9cb29}{\index{server.\-cpp@{server.\-cpp}!header@{header}}
+\index{header@{header}!server.cpp@{server.\-cpp}}
+\subsubsection[{header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf header\-\_\-transmission}$\ast$ header}}\label{server_8cpp_ac1276b47b6f7add1f7bd9350d2f9cb29}
+\hypertarget{server_8cpp_ad7bf504d3660ada99e01ae5cc6f26bdf}{\index{server.\-cpp@{server.\-cpp}!listen\-Fd@{listen\-Fd}}
+\index{listen\-Fd@{listen\-Fd}!server.cpp@{server.\-cpp}}
+\subsubsection[{listen\-Fd}]{\setlength{\rightskip}{0pt plus 5cm}int listen\-Fd}}\label{server_8cpp_ad7bf504d3660ada99e01ae5cc6f26bdf}
+\hypertarget{server_8cpp_a08ddc6ed3452290d5165e02bbe46d08b}{\index{server.\-cpp@{server.\-cpp}!n\-\_\-col@{n\-\_\-col}}
+\index{n\-\_\-col@{n\-\_\-col}!server.cpp@{server.\-cpp}}
+\subsubsection[{n\-\_\-col}]{\setlength{\rightskip}{0pt plus 5cm}int n\-\_\-col}}\label{server_8cpp_a08ddc6ed3452290d5165e02bbe46d08b}
+\hypertarget{server_8cpp_affd36f8acb85b65f5c2856d0a5375116}{\index{server.\-cpp@{server.\-cpp}!no\-Thread@{no\-Thread}}
+\index{no\-Thread@{no\-Thread}!server.cpp@{server.\-cpp}}
+\subsubsection[{no\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}int no\-Thread}}\label{server_8cpp_affd36f8acb85b65f5c2856d0a5375116}
+\hypertarget{server_8cpp_aa2631f25e19535d403ff16ce392a2ab3}{\index{server.\-cpp@{server.\-cpp}!numero\-\_\-utenti@{numero\-\_\-utenti}}
+\index{numero\-\_\-utenti@{numero\-\_\-utenti}!server.cpp@{server.\-cpp}}
+\subsubsection[{numero\-\_\-utenti}]{\setlength{\rightskip}{0pt plus 5cm}int numero\-\_\-utenti ={\bf no\-Thread}}}\label{server_8cpp_aa2631f25e19535d403ff16ce392a2ab3}
+\hypertarget{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{\index{server.\-cpp@{server.\-cpp}!output\-For\-Coloring@{output\-For\-Coloring}}
+\index{output\-For\-Coloring@{output\-For\-Coloring}!server.cpp@{server.\-cpp}}
+\subsubsection[{output\-For\-Coloring}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cf\-\_\-data} output\-For\-Coloring}}\label{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}
+\hypertarget{server_8cpp_a781b945b35d321e2e9a3e7d3cfc42f93}{\index{server.\-cpp@{server.\-cpp}!p\-Id@{p\-Id}}
+\index{p\-Id@{p\-Id}!server.cpp@{server.\-cpp}}
+\subsubsection[{p\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int p\-Id}}\label{server_8cpp_a781b945b35d321e2e9a3e7d3cfc42f93}
+\hypertarget{server_8cpp_ac2fde7a7aeb154a1e4660935c9526919}{\index{server.\-cpp@{server.\-cpp}!port\-No@{port\-No}}
+\index{port\-No@{port\-No}!server.cpp@{server.\-cpp}}
+\subsubsection[{port\-No}]{\setlength{\rightskip}{0pt plus 5cm}int port\-No}}\label{server_8cpp_ac2fde7a7aeb154a1e4660935c9526919}
+\hypertarget{server_8cpp_a941327d904d4e8f11687f89b6daa8ac1}{\index{server.\-cpp@{server.\-cpp}!primo\-C\-M@{primo\-C\-M}}
+\index{primo\-C\-M@{primo\-C\-M}!server.cpp@{server.\-cpp}}
+\subsubsection[{primo\-C\-M}]{\setlength{\rightskip}{0pt plus 5cm}bool primo\-C\-M =false}}\label{server_8cpp_a941327d904d4e8f11687f89b6daa8ac1}
+\hypertarget{server_8cpp_a616a568c4c19cf029610e5abc4e70150}{\index{server.\-cpp@{server.\-cpp}!req\-File@{req\-File}}
+\index{req\-File@{req\-File}!server.cpp@{server.\-cpp}}
+\subsubsection[{req\-File}]{\setlength{\rightskip}{0pt plus 5cm}int req\-File}}\label{server_8cpp_a616a568c4c19cf029610e5abc4e70150}
+Variable to set the requested file \hypertarget{server_8cpp_a65af033419450d60618533fde8ab81b0}{\index{server.\-cpp@{server.\-cpp}!root@{root}}
+\index{root@{root}!server.cpp@{server.\-cpp}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}log4cpp\-::\-Category\& root = log4cpp\-::\-Category\-::get\-Root()}}\label{server_8cpp_a65af033419450d60618533fde8ab81b0}
+\hypertarget{server_8cpp_aaa1eccce82dcaa067c3edf5e425db6f2}{\index{server.\-cpp@{server.\-cpp}!thread\-A@{thread\-A}}
+\index{thread\-A@{thread\-A}!server.cpp@{server.\-cpp}}
+\subsubsection[{thread\-A}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-t thread\-A\mbox{[}{\bf M\-A\-X\-C\-L\-I\-E\-N\-T}\mbox{]}}}\label{server_8cpp_aaa1eccce82dcaa067c3edf5e425db6f2}
+\hypertarget{server_8cpp_a22c4d1a7b939abe2437f400756e459ee}{\index{server.\-cpp@{server.\-cpp}!trasmissione\-Attiva@{trasmissione\-Attiva}}
+\index{trasmissione\-Attiva@{trasmissione\-Attiva}!server.cpp@{server.\-cpp}}
+\subsubsection[{trasmissione\-Attiva}]{\setlength{\rightskip}{0pt plus 5cm}int trasmissione\-Attiva =0}}\label{server_8cpp_a22c4d1a7b939abe2437f400756e459ee}

@@ -1,0 +1,9 @@
+<map id="hGCC" name="hGCC">
+<area shape="rect" id="node2" href="$hgcc_8cpp.html#a63ef20326c3bdcf93fb3b71f6c1906e3" title="createGraphForHGCC" alt="" coords="119,5,271,32"/>
+<area shape="rect" id="node3" href="$hgcc_8cpp.html#a2e2df49bc0019f570ef2c8b153b83913" title="createCacheMatrix" alt="" coords="129,56,261,83"/>
+<area shape="rect" id="node4" href="$hgcc_8cpp.html#a85f18ae20f46bb320ae79f3fe1aa7bf6" title="computeSubsetsList" alt="" coords="124,107,265,133"/>
+<area shape="rect" id="node5" href="$hgcc_8cpp.html#a1ba3876e9bdfff5967351ac9fee5dc21" title="runProcess" alt="" coords="151,157,239,184"/>
+<area shape="rect" id="node7" href="$hgcc_8cpp.html#a9dcc9f324111e127516eb7812e723784" title="checkConstraintsHGCC" alt="" coords="113,208,277,235"/>
+<area shape="rect" id="node8" href="$hgcc_8cpp.html#a804d79e4e3200dfa19c0a6516c68f0fa" title="localSearch" alt="" coords="149,259,240,285"/>
+<area shape="rect" id="node6" href="$hgcc_8cpp.html#a4df1c7c9c7a5a7db22f4395fa6b5dffb" title="IGCC_ColoringProcess" alt="" coords="326,157,485,184"/>
+</map>

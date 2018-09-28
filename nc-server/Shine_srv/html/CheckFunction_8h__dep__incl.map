@@ -1,0 +1,12 @@
+<map id="CheckFunction.h" name="CheckFunction.h">
+<area shape="rect" id="node2" href="$CheckFunction_8cpp.html" title="File to check memory allocations. " alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node3" href="$ConflictGraph_8h.html" title="ConflictGraph.h" alt="" coords="323,80,436,107"/>
+<area shape="rect" id="node5" href="$server_8cpp.html" title="The main File to use the Server. " alt="" coords="389,229,471,256"/>
+<area shape="rect" id="node6" href="$DecodingInput_8h.html" title="DecodingInput.h" alt="" coords="468,80,584,107"/>
+<area shape="rect" id="node8" href="$LibShine_8h.html" title="LibShine.h" alt="" coords="623,155,704,181"/>
+<area shape="rect" id="node10" href="$EnvironmentSetup_8h.html" title="EnvironmentSetup.h" alt="" coords="665,80,804,107"/>
+<area shape="rect" id="node4" href="$ConflictGraph_8cpp.html" title="File to generate the confict graph to perform the algorithm. " alt="" coords="215,155,341,181"/>
+<area shape="rect" id="node7" href="$DecodingInput_8cpp.html" title="A file to decoding the input informations such as, probability, pre&#45;filled cache... " alt="" coords="468,155,597,181"/>
+<area shape="rect" id="node9" href="$LibShine_8cpp.html" title="A file to execute the main functions. " alt="" coords="615,229,712,256"/>
+<area shape="rect" id="node11" href="$EnvironmentSetup_8cpp.html" title="A file to setup the environment when the server starts. " alt="" coords="780,155,933,181"/>
+</map>

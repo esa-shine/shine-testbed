@@ -1,0 +1,278 @@
+\hypertarget{grasp_8h}{\section{grasp.\-h File Reference}
+\label{grasp_8h}\index{grasp.\-h@{grasp.\-h}}
+}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}random\-Handler.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Data\-Definition.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}heap\-Sort.\-h\char`\"{}}\\*
+Include dependency graph for grasp.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{grasp_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{grasp_8h_a126590b25b2890594214115a21ccb1b3}{grasp\-Process} ()
+\item 
+void \hyperlink{grasp_8h_add7bcf8b26bd5a2d232797368fa48d89}{run\-Grasp} ()
+\item 
+int $\ast$ \hyperlink{grasp_8h_a5cc6e669bfa130d1dcf3724422c94a54}{construct\-Greedy\-Randomized\-Solution} (int $\ast$fo, float alpha)
+\item 
+\hyperlink{DataDefinition_8h_a8c4793b470f20960e0647bcb528a171b}{R\-C\-L\-\_\-\-L\-I\-S\-T} $\ast$ \hyperlink{grasp_8h_a6f1c1271ab34597c22c4b7a2d25328a3}{make\-R\-C\-L} (float alpha, int $\ast$n\-\_\-rcl, int $\ast$sol)
+\item 
+int $\ast$ \hyperlink{grasp_8h_af5940778e8e7e9d5c37e9e1510a8851d}{local\-Search} (int $\ast$sol, int $\ast$fo)
+\item 
+void \hyperlink{grasp_8h_aceacf4aaf6cf419efe16a5c077f363a6}{check\-Constraints} (int $\ast$sol)
+\item 
+int \hyperlink{grasp_8h_afcfa843d43b4171385e2a18b6ec288be}{get\-Color} (\hyperlink{DataDefinition_8h_a17b26c913a8eb52ca9efdc06681981b7}{N\-O\-D\-E} $\ast$node, int $\ast$fo, int $\ast$sol)
+\item 
+void \hyperlink{grasp_8h_a8b702a9434f7145e69ce372fb712171e}{create\-Graph} (\hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{output\-For\-Coloring})
+\item 
+int $\ast$ \hyperlink{grasp_8h_af11c331e2214bc02a7839fdde8c69183}{grasp\-Graph\-Coloring} (int max\-Iter, \hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{output\-For\-Coloring}, int $\ast$\hyperlink{server_8cpp_a08ddc6ed3452290d5165e02bbe46d08b}{n\-\_\-col})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{grasp_8h_aceacf4aaf6cf419efe16a5c077f363a6}{\index{grasp.\-h@{grasp.\-h}!check\-Constraints@{check\-Constraints}}
+\index{check\-Constraints@{check\-Constraints}!grasp.h@{grasp.\-h}}
+\subsubsection[{check\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}void check\-Constraints (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_aceacf4aaf6cf419efe16a5c077f363a6}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_aceacf4aaf6cf419efe16a5c077f363a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8h_a5cc6e669bfa130d1dcf3724422c94a54}{\index{grasp.\-h@{grasp.\-h}!construct\-Greedy\-Randomized\-Solution@{construct\-Greedy\-Randomized\-Solution}}
+\index{construct\-Greedy\-Randomized\-Solution@{construct\-Greedy\-Randomized\-Solution}!grasp.h@{grasp.\-h}}
+\subsubsection[{construct\-Greedy\-Randomized\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ construct\-Greedy\-Randomized\-Solution (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{fo, }
+\item[{float}]{alpha}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_a5cc6e669bfa130d1dcf3724422c94a54}
+This function provide to create an admissible solution 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_a5cc6e669bfa130d1dcf3724422c94a54_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_a5cc6e669bfa130d1dcf3724422c94a54_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8h_a8b702a9434f7145e69ce372fb712171e}{\index{grasp.\-h@{grasp.\-h}!create\-Graph@{create\-Graph}}
+\index{create\-Graph@{create\-Graph}!grasp.h@{grasp.\-h}}
+\subsubsection[{create\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}void create\-Graph (
+\begin{DoxyParamCaption}
+\item[{{\bf cf\-\_\-data}}]{output\-For\-Coloring}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_a8b702a9434f7145e69ce372fb712171e}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_a8b702a9434f7145e69ce372fb712171e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8h_afcfa843d43b4171385e2a18b6ec288be}{\index{grasp.\-h@{grasp.\-h}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!grasp.h@{grasp.\-h}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Color (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-O\-D\-E} $\ast$}]{node, }
+\item[{int $\ast$}]{fo, }
+\item[{int $\ast$}]{sol}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_afcfa843d43b4171385e2a18b6ec288be}
+This function identifies, in according to the node's neighborhood, the color that can be associated to the node 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_afcfa843d43b4171385e2a18b6ec288be_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8h_af11c331e2214bc02a7839fdde8c69183}{\index{grasp.\-h@{grasp.\-h}!grasp\-Graph\-Coloring@{grasp\-Graph\-Coloring}}
+\index{grasp\-Graph\-Coloring@{grasp\-Graph\-Coloring}!grasp.h@{grasp.\-h}}
+\subsubsection[{grasp\-Graph\-Coloring}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ grasp\-Graph\-Coloring (
+\begin{DoxyParamCaption}
+\item[{int}]{max\-Iter, }
+\item[{{\bf cf\-\_\-data}}]{output\-For\-Coloring, }
+\item[{int $\ast$}]{n\-\_\-col}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_af11c331e2214bc02a7839fdde8c69183}
+Main Function -\/ Input\-: Max Numbers Of G\-R\-A\-S\-P's Iterations 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_af11c331e2214bc02a7839fdde8c69183_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_af11c331e2214bc02a7839fdde8c69183_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8h_a126590b25b2890594214115a21ccb1b3}{\index{grasp.\-h@{grasp.\-h}!grasp\-Process@{grasp\-Process}}
+\index{grasp\-Process@{grasp\-Process}!grasp.h@{grasp.\-h}}
+\subsubsection[{grasp\-Process}]{\setlength{\rightskip}{0pt plus 5cm}void grasp\-Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_a126590b25b2890594214115a21ccb1b3}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_a126590b25b2890594214115a21ccb1b3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_a126590b25b2890594214115a21ccb1b3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8h_af5940778e8e7e9d5c37e9e1510a8851d}{\index{grasp.\-h@{grasp.\-h}!local\-Search@{local\-Search}}
+\index{local\-Search@{local\-Search}!grasp.h@{grasp.\-h}}
+\subsubsection[{local\-Search}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ local\-Search (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol, }
+\item[{int $\ast$}]{fo}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_af5940778e8e7e9d5c37e9e1510a8851d}
+This function try to improve the current solution. This procedure try to decrese the number of color utilized 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_af5940778e8e7e9d5c37e9e1510a8851d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8h_a6f1c1271ab34597c22c4b7a2d25328a3}{\index{grasp.\-h@{grasp.\-h}!make\-R\-C\-L@{make\-R\-C\-L}}
+\index{make\-R\-C\-L@{make\-R\-C\-L}!grasp.h@{grasp.\-h}}
+\subsubsection[{make\-R\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-C\-L\-\_\-\-L\-I\-S\-T}$\ast$ make\-R\-C\-L (
+\begin{DoxyParamCaption}
+\item[{float}]{alpha, }
+\item[{int $\ast$}]{n\-\_\-rcl, }
+\item[{int $\ast$}]{sol}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_a6f1c1271ab34597c22c4b7a2d25328a3}
+This function provide to create a Restricted Candidates List 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_a6f1c1271ab34597c22c4b7a2d25328a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8h_add7bcf8b26bd5a2d232797368fa48d89}{\index{grasp.\-h@{grasp.\-h}!run\-Grasp@{run\-Grasp}}
+\index{run\-Grasp@{run\-Grasp}!grasp.h@{grasp.\-h}}
+\subsubsection[{run\-Grasp}]{\setlength{\rightskip}{0pt plus 5cm}void run\-Grasp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{grasp_8h_add7bcf8b26bd5a2d232797368fa48d89}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_add7bcf8b26bd5a2d232797368fa48d89_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8h_add7bcf8b26bd5a2d232797368fa48d89_icgraph}
+\end{center}
+\end{figure}
+
+

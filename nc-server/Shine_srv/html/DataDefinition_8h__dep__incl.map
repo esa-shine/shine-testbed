@@ -1,0 +1,17 @@
+<map id="DataDefinition.h" name="DataDefinition.h">
+<area shape="rect" id="node2" href="$ConflictGraph_8h.html" title="ConflictGraph.h" alt="" coords="605,80,717,107"/>
+<area shape="rect" id="node4" href="$server_8cpp.html" title="The main File to use the Server. " alt="" coords="519,229,600,256"/>
+<area shape="rect" id="node5" href="$DecodingInput_8h.html" title="DecodingInput.h" alt="" coords="183,80,299,107"/>
+<area shape="rect" id="node9" href="$EnvironmentSetup_8h.html" title="EnvironmentSetup.h" alt="" coords="330,80,469,107"/>
+<area shape="rect" id="node11" href="$grasp_8h.html" title="grasp.h" alt="" coords="1073,155,1137,181"/>
+<area shape="rect" id="node13" href="$heapSort_8h.html" title="heapSort.h" alt="" coords="956,80,1041,107"/>
+<area shape="rect" id="node15" href="$hgcc_8h.html" title="hgcc.h" alt="" coords="775,80,836,107"/>
+<area shape="rect" id="node3" href="$ConflictGraph_8cpp.html" title="File to generate the confict graph to perform the algorithm. " alt="" coords="598,155,724,181"/>
+<area shape="rect" id="node6" href="$DecodingInput_8cpp.html" title="A file to decoding the input informations such as, probability, pre&#45;filled cache... " alt="" coords="5,155,135,181"/>
+<area shape="rect" id="node7" href="$LibShine_8h.html" title="LibShine.h" alt="" coords="160,155,241,181"/>
+<area shape="rect" id="node8" href="$LibShine_8cpp.html" title="A file to execute the main functions. " alt="" coords="153,229,249,256"/>
+<area shape="rect" id="node10" href="$EnvironmentSetup_8cpp.html" title="A file to setup the environment when the server starts. " alt="" coords="368,155,521,181"/>
+<area shape="rect" id="node12" href="$grasp_8cpp.html" title="A file to perform the grasp algorthm. " alt="" coords="1066,229,1144,256"/>
+<area shape="rect" id="node14" href="$heapSort_8cpp.html" title="A file to generate heap struct. " alt="" coords="949,155,1048,181"/>
+<area shape="rect" id="node16" href="$hgcc_8cpp.html" title="A file to perform the hgcc algorithm. " alt="" coords="800,155,873,181"/>
+</map>

@@ -1,0 +1,201 @@
+\hypertarget{EnvironmentSetup_8cpp}{\section{Environment\-Setup.\-cpp File Reference}
+\label{EnvironmentSetup_8cpp}\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}}
+}
+
+
+A file to setup the environment when the server starts.  
+
+
+{\ttfamily \#include \char`\"{}Environment\-Setup.\-h\char`\"{}}\\*
+Include dependency graph for Environment\-Setup.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EnvironmentSetup_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{EnvironmentSetup_8cpp_abaf06bc6f4c1bede056ea6b7ec94e05c}{random\-Q\-Vector} (double $\ast$$\ast$probs)
+\item 
+void \hyperlink{EnvironmentSetup_8cpp_a4d50fc0d1a9264291bfb35ec3175c4d9}{random\-Ind\-Matrix} (float memory\-\_\-discretizzata, int $\ast$$\ast$M, vector$<$ int $>$ \&input, int number\-\_\-of\-\_\-request, vector$<$ int $>$ memory\-\_\-per\-\_\-user)
+\item 
+void \hyperlink{EnvironmentSetup_8cpp_a8b78d1d7ffbdd78e9d0da690a2cf9ca4}{\-\_\-alloc\-Variables} ()
+\item 
+void \hyperlink{EnvironmentSetup_8cpp_ae60993fb259445fe13e581ae08ab1544}{\-\_\-dealloc\-Variables} ()
+\item 
+vector$<$ int $>$ \hyperlink{EnvironmentSetup_8cpp_ac6a9e71bb90d7953b32b3379e26b3de8}{set\-Environment} (int n\-\_\-utenti\-\_\-in, int m\-\_\-files\-\_\-in, int $\ast$b\-\_\-chuncks\-\_\-in, double $\ast$$\ast$probs, int $\ast$$\ast$M)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{EnvironmentSetup_8cpp_ad60b7b31764dce9b0aca39b058497cd0}{n\-\_\-utenti\-\_\-env}
+\item 
+int \hyperlink{EnvironmentSetup_8cpp_abcfab90bc20db0b37162ffdc0553ef81}{m\-\_\-files\-\_\-env}
+\item 
+int $\ast$ \hyperlink{EnvironmentSetup_8cpp_a2855cde2dabfbb76bb70fb921659e731}{b\-\_\-chuncks\-\_\-env}
+\item 
+int $\ast$ \hyperlink{EnvironmentSetup_8cpp_adcf171e8a8853d501c3c5c06483611ce}{Q\-\_\-array} = N\-U\-L\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A file to setup the environment when the server starts. 
+
+\subsection{Function Documentation}
+\hypertarget{EnvironmentSetup_8cpp_a8b78d1d7ffbdd78e9d0da690a2cf9ca4}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!\-\_\-alloc\-Variables@{\-\_\-alloc\-Variables}}
+\index{\-\_\-alloc\-Variables@{\-\_\-alloc\-Variables}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{\-\_\-alloc\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void \-\_\-alloc\-Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{EnvironmentSetup_8cpp_a8b78d1d7ffbdd78e9d0da690a2cf9ca4}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{EnvironmentSetup_8cpp_a8b78d1d7ffbdd78e9d0da690a2cf9ca4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EnvironmentSetup_8cpp_a8b78d1d7ffbdd78e9d0da690a2cf9ca4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{EnvironmentSetup_8cpp_ae60993fb259445fe13e581ae08ab1544}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!\-\_\-dealloc\-Variables@{\-\_\-dealloc\-Variables}}
+\index{\-\_\-dealloc\-Variables@{\-\_\-dealloc\-Variables}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{\-\_\-dealloc\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}void \-\_\-dealloc\-Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{EnvironmentSetup_8cpp_ae60993fb259445fe13e581ae08ab1544}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EnvironmentSetup_8cpp_ae60993fb259445fe13e581ae08ab1544_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{EnvironmentSetup_8cpp_a4d50fc0d1a9264291bfb35ec3175c4d9}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!random\-Ind\-Matrix@{random\-Ind\-Matrix}}
+\index{random\-Ind\-Matrix@{random\-Ind\-Matrix}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{random\-Ind\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void random\-Ind\-Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{memory\-\_\-discretizzata, }
+\item[{int $\ast$$\ast$}]{M, }
+\item[{vector$<$ int $>$ \&}]{input, }
+\item[{int}]{number\-\_\-of\-\_\-request, }
+\item[{vector$<$ int $>$}]{memory\-\_\-per\-\_\-user}
+\end{DoxyParamCaption}
+)}}\label{EnvironmentSetup_8cpp_a4d50fc0d1a9264291bfb35ec3175c4d9}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EnvironmentSetup_8cpp_a4d50fc0d1a9264291bfb35ec3175c4d9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EnvironmentSetup_8cpp_a4d50fc0d1a9264291bfb35ec3175c4d9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{EnvironmentSetup_8cpp_abaf06bc6f4c1bede056ea6b7ec94e05c}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!random\-Q\-Vector@{random\-Q\-Vector}}
+\index{random\-Q\-Vector@{random\-Q\-Vector}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{random\-Q\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}void random\-Q\-Vector (
+\begin{DoxyParamCaption}
+\item[{double $\ast$$\ast$}]{probs}
+\end{DoxyParamCaption}
+)}}\label{EnvironmentSetup_8cpp_abaf06bc6f4c1bede056ea6b7ec94e05c}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EnvironmentSetup_8cpp_abaf06bc6f4c1bede056ea6b7ec94e05c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{EnvironmentSetup_8cpp_ac6a9e71bb90d7953b32b3379e26b3de8}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!set\-Environment@{set\-Environment}}
+\index{set\-Environment@{set\-Environment}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{set\-Environment}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ set\-Environment (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-\_\-utenti\-\_\-in, }
+\item[{int}]{m\-\_\-files\-\_\-in, }
+\item[{int $\ast$}]{b\-\_\-chuncks\-\_\-in, }
+\item[{double $\ast$$\ast$}]{probs, }
+\item[{int $\ast$$\ast$}]{M}
+\end{DoxyParamCaption}
+)}}\label{EnvironmentSetup_8cpp_ac6a9e71bb90d7953b32b3379e26b3de8}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EnvironmentSetup_8cpp_ac6a9e71bb90d7953b32b3379e26b3de8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{EnvironmentSetup_8cpp_ac6a9e71bb90d7953b32b3379e26b3de8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{EnvironmentSetup_8cpp_a2855cde2dabfbb76bb70fb921659e731}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!b\-\_\-chuncks\-\_\-env@{b\-\_\-chuncks\-\_\-env}}
+\index{b\-\_\-chuncks\-\_\-env@{b\-\_\-chuncks\-\_\-env}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{b\-\_\-chuncks\-\_\-env}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ b\-\_\-chuncks\-\_\-env}}\label{EnvironmentSetup_8cpp_a2855cde2dabfbb76bb70fb921659e731}
+\hypertarget{EnvironmentSetup_8cpp_abcfab90bc20db0b37162ffdc0553ef81}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!m\-\_\-files\-\_\-env@{m\-\_\-files\-\_\-env}}
+\index{m\-\_\-files\-\_\-env@{m\-\_\-files\-\_\-env}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{m\-\_\-files\-\_\-env}]{\setlength{\rightskip}{0pt plus 5cm}int m\-\_\-files\-\_\-env}}\label{EnvironmentSetup_8cpp_abcfab90bc20db0b37162ffdc0553ef81}
+\hypertarget{EnvironmentSetup_8cpp_ad60b7b31764dce9b0aca39b058497cd0}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!n\-\_\-utenti\-\_\-env@{n\-\_\-utenti\-\_\-env}}
+\index{n\-\_\-utenti\-\_\-env@{n\-\_\-utenti\-\_\-env}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{n\-\_\-utenti\-\_\-env}]{\setlength{\rightskip}{0pt plus 5cm}int n\-\_\-utenti\-\_\-env}}\label{EnvironmentSetup_8cpp_ad60b7b31764dce9b0aca39b058497cd0}
+\hypertarget{EnvironmentSetup_8cpp_adcf171e8a8853d501c3c5c06483611ce}{\index{Environment\-Setup.\-cpp@{Environment\-Setup.\-cpp}!Q\-\_\-array@{Q\-\_\-array}}
+\index{Q\-\_\-array@{Q\-\_\-array}!EnvironmentSetup.cpp@{Environment\-Setup.\-cpp}}
+\subsubsection[{Q\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Q\-\_\-array = N\-U\-L\-L}}\label{EnvironmentSetup_8cpp_adcf171e8a8853d501c3c5c06483611ce}

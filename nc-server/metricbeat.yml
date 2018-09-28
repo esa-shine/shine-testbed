@@ -1,0 +1,32 @@
+metricbeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+
+setup.template.settings:
+  index.number_of_shards: 1
+  index.codec: best_compression
+
+### Logstash as output
+output.logstash:
+  # The Logstash hosts
+  hosts: ["172.18.0.101:5044"]
+
+output.logstash.ssl:
+  # List of root certificates for HTTPS server verifications
+  certificate_authorities: ["/etc/pki/tls/certs/logstash-forwarder.crt"]
+
+setup.kibana:
+  host: "172.18.0.11:5601"
+
+  #protocol: "https"
+  #username: "elastic"
+  #password: "changeme"
+
+queue.mem:
+  events: 4096
+  flush.min_events: 512
+  flush.timeout: 5s
+
+#setup.dashboards.enabled: true
+#setup.template.enabled: true
+#setup.dashboards.always_kibana: false

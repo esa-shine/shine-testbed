@@ -1,0 +1,9 @@
+FROM ubuntu:14.04
+RUN apt-get update
+RUN apt-get install -y build-essential openssh-client vim libssh-4 libssh-dev nano
+COPY log4cpp-1.1.2.tar.gz /
+COPY install_log.sh /
+RUN sh install_log.sh
+ADD utils/lib /usr/lib
+COPY Test /
+EXPOSE 22

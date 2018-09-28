@@ -1,0 +1,6 @@
+<map id="graspProcess" name="graspProcess">
+<area shape="rect" id="node2" href="$grasp_8h.html#af11c331e2214bc02a7839fdde8c69183" title="graspGraphColoring" alt="" coords="158,5,295,32"/>
+<area shape="rect" id="node3" href="$server_8cpp.html#ab831c44f8ddb7ea2b41ada3f8c263d80" title="taskUdp" alt="" coords="345,5,415,32"/>
+<area shape="rect" id="node4" href="$server_8cpp.html#a7b062b307f683d3473961f5191aa892b" title="taskTCP" alt="" coords="464,5,539,32"/>
+<area shape="rect" id="node5" href="$server_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="587,5,637,32"/>
+</map>

@@ -1,0 +1,225 @@
+\hypertarget{LibShine_8h}{\section{Lib\-Shine.\-h File Reference}
+\label{LibShine_8h}\index{Lib\-Shine.\-h@{Lib\-Shine.\-h}}
+}
+{\ttfamily \#include $<$log4cpp/\-Category.\-hh$>$}\\*
+{\ttfamily \#include $<$log4cpp/\-Appender.\-hh$>$}\\*
+{\ttfamily \#include $<$log4cpp/\-File\-Appender.\-hh$>$}\\*
+{\ttfamily \#include $<$log4cpp/\-Ostream\-Appender.\-hh$>$}\\*
+{\ttfamily \#include $<$log4cpp/\-Layout.\-hh$>$}\\*
+{\ttfamily \#include $<$log4cpp/\-Basic\-Layout.\-hh$>$}\\*
+{\ttfamily \#include $<$log4cpp/\-Priority.\-hh$>$}\\*
+{\ttfamily \#include $<$log4cpp/\-Rolling\-File\-Appender.\-hh$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+{\ttfamily \#include $<$libssh/libssh.\-h$>$}\\*
+{\ttfamily \#include $<$libssh/sftp.\-h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\-h$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include \char`\"{}Environment\-Setup.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Check\-Function.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}random\-Handler.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Decoding\-Input.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}utility\-For\-Testing.\-h\char`\"{}}\\*
+Include dependency graph for Lib\-Shine.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LibShine_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{LibShine_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structConfig}{Config}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{LibShine_8h_a2c0cfc1a20a2913158208c8c80a663d2}{S\-E\-C\-O\-N\-D\-S\-A\-T\-T\-E\-S\-A}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{LibShine_8h_ae5a905df50999173db9e821ba59dd797}{Attesa} (int)
+\item 
+\hyperlink{DataDefinition_8h_aa8ca5572763177379406da03176d0ef9}{data\-\_\-matrix} \hyperlink{LibShine_8h_a08f3e428f8418d11660f3c3847fdf12b}{make\-Cache} (vector$<$ sockaddr\-\_\-in $>$, int, int, int, string)
+\item 
+int \hyperlink{LibShine_8h_ad5d8ab97d3635ecaf8fa78225cb960fb}{verify\-\_\-knownhost} (ssh\-\_\-session session)
+\item 
+void \hyperlink{LibShine_8h_ae8cb404636cd09daa15b22dd3552b5bb}{color\-Rienumeration} (int, int $\ast$$\ast$, int)
+\item 
+int $\ast$ \hyperlink{LibShine_8h_a51d877ba59909c8920daf6bfc09d8daf}{make\-Vector\-Chuncks} (int \hyperlink{ConflictGraph_8cpp_abd950309ddc65353a014b00c8c4a11b0}{m\-\_\-files}, int, string)
+\item 
+void \hyperlink{LibShine_8h_a370e71d9a79a721cd54acb1c5585092b}{load\-Config\-File} (\hyperlink{structConfig}{Config} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{LibShine_8h_a2c0cfc1a20a2913158208c8c80a663d2}{\index{Lib\-Shine.\-h@{Lib\-Shine.\-h}!S\-E\-C\-O\-N\-D\-S\-A\-T\-T\-E\-S\-A@{S\-E\-C\-O\-N\-D\-S\-A\-T\-T\-E\-S\-A}}
+\index{S\-E\-C\-O\-N\-D\-S\-A\-T\-T\-E\-S\-A@{S\-E\-C\-O\-N\-D\-S\-A\-T\-T\-E\-S\-A}!LibShine.h@{Lib\-Shine.\-h}}
+\subsubsection[{S\-E\-C\-O\-N\-D\-S\-A\-T\-T\-E\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-E\-C\-O\-N\-D\-S\-A\-T\-T\-E\-S\-A~1}}\label{LibShine_8h_a2c0cfc1a20a2913158208c8c80a663d2}
+
+
+\subsection{Function Documentation}
+\hypertarget{LibShine_8h_ae5a905df50999173db9e821ba59dd797}{\index{Lib\-Shine.\-h@{Lib\-Shine.\-h}!Attesa@{Attesa}}
+\index{Attesa@{Attesa}!LibShine.h@{Lib\-Shine.\-h}}
+\subsubsection[{Attesa}]{\setlength{\rightskip}{0pt plus 5cm}int Attesa (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{LibShine_8h_ae5a905df50999173db9e821ba59dd797}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{LibShine_8h_ae5a905df50999173db9e821ba59dd797_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{LibShine_8h_ae8cb404636cd09daa15b22dd3552b5bb}{\index{Lib\-Shine.\-h@{Lib\-Shine.\-h}!color\-Rienumeration@{color\-Rienumeration}}
+\index{color\-Rienumeration@{color\-Rienumeration}!LibShine.h@{Lib\-Shine.\-h}}
+\subsubsection[{color\-Rienumeration}]{\setlength{\rightskip}{0pt plus 5cm}void color\-Rienumeration (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int $\ast$$\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{LibShine_8h_ae8cb404636cd09daa15b22dd3552b5bb}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LibShine_8h_ae8cb404636cd09daa15b22dd3552b5bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{LibShine_8h_a370e71d9a79a721cd54acb1c5585092b}{\index{Lib\-Shine.\-h@{Lib\-Shine.\-h}!load\-Config\-File@{load\-Config\-File}}
+\index{load\-Config\-File@{load\-Config\-File}!LibShine.h@{Lib\-Shine.\-h}}
+\subsubsection[{load\-Config\-File}]{\setlength{\rightskip}{0pt plus 5cm}void load\-Config\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf Config} \&}]{config}
+\end{DoxyParamCaption}
+)}}\label{LibShine_8h_a370e71d9a79a721cd54acb1c5585092b}
+function to load configuration file 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{LibShine_8h_a370e71d9a79a721cd54acb1c5585092b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{LibShine_8h_a08f3e428f8418d11660f3c3847fdf12b}{\index{Lib\-Shine.\-h@{Lib\-Shine.\-h}!make\-Cache@{make\-Cache}}
+\index{make\-Cache@{make\-Cache}!LibShine.h@{Lib\-Shine.\-h}}
+\subsubsection[{make\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf data\-\_\-matrix} make\-Cache (
+\begin{DoxyParamCaption}
+\item[{vector$<$ sockaddr\-\_\-in $>$}]{fd, }
+\item[{int}]{no\-Thread, }
+\item[{int}]{n\-Files, }
+\item[{int}]{max\-Size\-Package, }
+\item[{string}]{path\-Files}
+\end{DoxyParamCaption}
+)}}\label{LibShine_8h_a08f3e428f8418d11660f3c3847fdf12b}
+function to preload the caches 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LibShine_8h_a08f3e428f8418d11660f3c3847fdf12b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{LibShine_8h_a08f3e428f8418d11660f3c3847fdf12b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{LibShine_8h_a51d877ba59909c8920daf6bfc09d8daf}{\index{Lib\-Shine.\-h@{Lib\-Shine.\-h}!make\-Vector\-Chuncks@{make\-Vector\-Chuncks}}
+\index{make\-Vector\-Chuncks@{make\-Vector\-Chuncks}!LibShine.h@{Lib\-Shine.\-h}}
+\subsubsection[{make\-Vector\-Chuncks}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ make\-Vector\-Chuncks (
+\begin{DoxyParamCaption}
+\item[{int}]{m\-\_\-files, }
+\item[{int}]{max\-Size\-Package, }
+\item[{string}]{path\-Files}
+\end{DoxyParamCaption}
+)}}\label{LibShine_8h_a51d877ba59909c8920daf6bfc09d8daf}
+function to count the chunks for each file 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{LibShine_8h_a51d877ba59909c8920daf6bfc09d8daf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LibShine_8h_a51d877ba59909c8920daf6bfc09d8daf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{LibShine_8h_ad5d8ab97d3635ecaf8fa78225cb960fb}{\index{Lib\-Shine.\-h@{Lib\-Shine.\-h}!verify\-\_\-knownhost@{verify\-\_\-knownhost}}
+\index{verify\-\_\-knownhost@{verify\-\_\-knownhost}!LibShine.h@{Lib\-Shine.\-h}}
+\subsubsection[{verify\-\_\-knownhost}]{\setlength{\rightskip}{0pt plus 5cm}int verify\-\_\-knownhost (
+\begin{DoxyParamCaption}
+\item[{ssh\-\_\-session}]{session}
+\end{DoxyParamCaption}
+)}}\label{LibShine_8h_ad5d8ab97d3635ecaf8fa78225cb960fb}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LibShine_8h_ad5d8ab97d3635ecaf8fa78225cb960fb_icgraph}
+\end{center}
+\end{figure}
+
+

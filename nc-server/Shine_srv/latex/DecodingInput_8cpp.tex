@@ -1,0 +1,162 @@
+\hypertarget{DecodingInput_8cpp}{\section{Decoding\-Input.\-cpp File Reference}
+\label{DecodingInput_8cpp}\index{Decoding\-Input.\-cpp@{Decoding\-Input.\-cpp}}
+}
+
+
+A file to decoding the input informations such as, probability, pre-\/filled cache...  
+
+
+{\ttfamily \#include \char`\"{}Decoding\-Input.\-h\char`\"{}}\\*
+Include dependency graph for Decoding\-Input.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{DecodingInput_8cpp_aa782eca5b098d797c8d30c74a72867ff}{compute\-Ind\-Matrix} (vector$<$ int $>$ input)
+\item 
+void \hyperlink{DecodingInput_8cpp_a19f422d53bf7ced4e3c7980cbdf76070}{compute\-Q\-Matrix} (int \hyperlink{ConflictGraph_8cpp_a2f6dbcf4fcf737ed9e4bcfbba6a961fa}{n\-\_\-utenti}, int $\ast$\hyperlink{ConflictGraph_8cpp_a1d12de4f14bfff1b963f424aac823fd5}{b\-\_\-chuncks})
+\item 
+void \hyperlink{DecodingInput_8cpp_a205ca4ba89c71b97219af118fe2c2780}{\-\_\-alloc\-Arrays} (int \hyperlink{ConflictGraph_8cpp_a2f6dbcf4fcf737ed9e4bcfbba6a961fa}{n\-\_\-utenti}, int $\ast$\hyperlink{ConflictGraph_8cpp_a1d12de4f14bfff1b963f424aac823fd5}{b\-\_\-chuncks}, int \hyperlink{ConflictGraph_8cpp_abd950309ddc65353a014b00c8c4a11b0}{m\-\_\-files})
+\item 
+\hyperlink{DataDefinition_8h_aa8ca5572763177379406da03176d0ef9}{data\-\_\-matrix} \hyperlink{DecodingInput_8cpp_adeb27f5ee8cd0559470e879c8d606800}{from\-Array\-To\-Matrix} (int \hyperlink{ConflictGraph_8cpp_abd950309ddc65353a014b00c8c4a11b0}{m\-\_\-files}, int $\ast$\hyperlink{ConflictGraph_8cpp_a1d12de4f14bfff1b963f424aac823fd5}{b\-\_\-chuncks}, vector$<$ int $>$ input)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$$\ast$$\ast$ \hyperlink{DecodingInput_8cpp_a8c945a42c2fbc141ea28ec1348dbfb72}{Ind\-\_\-cache} = N\-U\-L\-L
+\item 
+int $\ast$ \hyperlink{DecodingInput_8cpp_abb03b7268b29a994143a1b4f62596c79}{Q\-\_\-demand} = N\-U\-L\-L
+\item 
+int $\ast$$\ast$ \hyperlink{DecodingInput_8cpp_a17a68ce598f88610e937f6efa48f2e27}{Q\-\_\-matrix} = N\-U\-L\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A file to decoding the input informations such as, probability, pre-\/filled cache... 
+
+\subsection{Function Documentation}
+\hypertarget{DecodingInput_8cpp_a205ca4ba89c71b97219af118fe2c2780}{\index{Decoding\-Input.\-cpp@{Decoding\-Input.\-cpp}!\-\_\-alloc\-Arrays@{\-\_\-alloc\-Arrays}}
+\index{\-\_\-alloc\-Arrays@{\-\_\-alloc\-Arrays}!DecodingInput.cpp@{Decoding\-Input.\-cpp}}
+\subsubsection[{\-\_\-alloc\-Arrays}]{\setlength{\rightskip}{0pt plus 5cm}void \-\_\-alloc\-Arrays (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-\_\-utenti, }
+\item[{int $\ast$}]{b\-\_\-chuncks, }
+\item[{int}]{m\-\_\-files}
+\end{DoxyParamCaption}
+)}}\label{DecodingInput_8cpp_a205ca4ba89c71b97219af118fe2c2780}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{DecodingInput_8cpp_a205ca4ba89c71b97219af118fe2c2780_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8cpp_a205ca4ba89c71b97219af118fe2c2780_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{DecodingInput_8cpp_aa782eca5b098d797c8d30c74a72867ff}{\index{Decoding\-Input.\-cpp@{Decoding\-Input.\-cpp}!compute\-Ind\-Matrix@{compute\-Ind\-Matrix}}
+\index{compute\-Ind\-Matrix@{compute\-Ind\-Matrix}!DecodingInput.cpp@{Decoding\-Input.\-cpp}}
+\subsubsection[{compute\-Ind\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void compute\-Ind\-Matrix (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$}]{input}
+\end{DoxyParamCaption}
+)}}\label{DecodingInput_8cpp_aa782eca5b098d797c8d30c74a72867ff}
+This is a function that provide a compute the Ind cache matrix, this matrix is a binary matrix, Ind\mbox{[}i,j,k\mbox{]} = 0 if the user 'i' not have the chunk 'k' associated to file 'j' 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8cpp_aa782eca5b098d797c8d30c74a72867ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{DecodingInput_8cpp_a19f422d53bf7ced4e3c7980cbdf76070}{\index{Decoding\-Input.\-cpp@{Decoding\-Input.\-cpp}!compute\-Q\-Matrix@{compute\-Q\-Matrix}}
+\index{compute\-Q\-Matrix@{compute\-Q\-Matrix}!DecodingInput.cpp@{Decoding\-Input.\-cpp}}
+\subsubsection[{compute\-Q\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void compute\-Q\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-\_\-utenti, }
+\item[{int $\ast$}]{b\-\_\-chuncks}
+\end{DoxyParamCaption}
+)}}\label{DecodingInput_8cpp_a19f422d53bf7ced4e3c7980cbdf76070}
+This is a function that provide a compute the Q matrix, this matrix is a binary matrix, Q\mbox{[}i,k\mbox{]} = 0 if the user 'i' have in cache the chunk 'k' related to files that he request 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8cpp_a19f422d53bf7ced4e3c7980cbdf76070_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{DecodingInput_8cpp_adeb27f5ee8cd0559470e879c8d606800}{\index{Decoding\-Input.\-cpp@{Decoding\-Input.\-cpp}!from\-Array\-To\-Matrix@{from\-Array\-To\-Matrix}}
+\index{from\-Array\-To\-Matrix@{from\-Array\-To\-Matrix}!DecodingInput.cpp@{Decoding\-Input.\-cpp}}
+\subsubsection[{from\-Array\-To\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf data\-\_\-matrix} from\-Array\-To\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{m\-\_\-files, }
+\item[{int $\ast$}]{b\-\_\-chuncks, }
+\item[{vector$<$ int $>$}]{input}
+\end{DoxyParamCaption}
+)}}\label{DecodingInput_8cpp_adeb27f5ee8cd0559470e879c8d606800}
+Compute the cache binary matrix
+
+Compute the binary matrix Q 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8cpp_adeb27f5ee8cd0559470e879c8d606800_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8cpp_adeb27f5ee8cd0559470e879c8d606800_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{DecodingInput_8cpp_a8c945a42c2fbc141ea28ec1348dbfb72}{\index{Decoding\-Input.\-cpp@{Decoding\-Input.\-cpp}!Ind\-\_\-cache@{Ind\-\_\-cache}}
+\index{Ind\-\_\-cache@{Ind\-\_\-cache}!DecodingInput.cpp@{Decoding\-Input.\-cpp}}
+\subsubsection[{Ind\-\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$$\ast$ Ind\-\_\-cache = N\-U\-L\-L}}\label{DecodingInput_8cpp_a8c945a42c2fbc141ea28ec1348dbfb72}
+\hypertarget{DecodingInput_8cpp_abb03b7268b29a994143a1b4f62596c79}{\index{Decoding\-Input.\-cpp@{Decoding\-Input.\-cpp}!Q\-\_\-demand@{Q\-\_\-demand}}
+\index{Q\-\_\-demand@{Q\-\_\-demand}!DecodingInput.cpp@{Decoding\-Input.\-cpp}}
+\subsubsection[{Q\-\_\-demand}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Q\-\_\-demand = N\-U\-L\-L}}\label{DecodingInput_8cpp_abb03b7268b29a994143a1b4f62596c79}
+\hypertarget{DecodingInput_8cpp_a17a68ce598f88610e937f6efa48f2e27}{\index{Decoding\-Input.\-cpp@{Decoding\-Input.\-cpp}!Q\-\_\-matrix@{Q\-\_\-matrix}}
+\index{Q\-\_\-matrix@{Q\-\_\-matrix}!DecodingInput.cpp@{Decoding\-Input.\-cpp}}
+\subsubsection[{Q\-\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Q\-\_\-matrix = N\-U\-L\-L}}\label{DecodingInput_8cpp_a17a68ce598f88610e937f6efa48f2e27}

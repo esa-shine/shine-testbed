@@ -1,0 +1,312 @@
+\hypertarget{grasp_8cpp}{\section{grasp.\-cpp File Reference}
+\label{grasp_8cpp}\index{grasp.\-cpp@{grasp.\-cpp}}
+}
+
+
+A file to perform the grasp algorthm.  
+
+
+{\ttfamily \#include \char`\"{}grasp.\-h\char`\"{}}\\*
+Include dependency graph for grasp.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{grasp_8cpp_a126590b25b2890594214115a21ccb1b3}{grasp\-Process} ()
+\item 
+void \hyperlink{grasp_8cpp_add7bcf8b26bd5a2d232797368fa48d89}{run\-Grasp} ()
+\item 
+int $\ast$ \hyperlink{grasp_8cpp_a5cc6e669bfa130d1dcf3724422c94a54}{construct\-Greedy\-Randomized\-Solution} (int $\ast$fo, float alpha)
+\item 
+\hyperlink{DataDefinition_8h_a8c4793b470f20960e0647bcb528a171b}{R\-C\-L\-\_\-\-L\-I\-S\-T} $\ast$ \hyperlink{grasp_8cpp_a6f1c1271ab34597c22c4b7a2d25328a3}{make\-R\-C\-L} (float alpha, int $\ast$n\-\_\-rcl, int $\ast$sol)
+\item 
+int $\ast$ \hyperlink{grasp_8cpp_af5940778e8e7e9d5c37e9e1510a8851d}{local\-Search} (int $\ast$sol, int $\ast$fo)
+\item 
+void \hyperlink{grasp_8cpp_aceacf4aaf6cf419efe16a5c077f363a6}{check\-Constraints} (int $\ast$sol)
+\item 
+int \hyperlink{grasp_8cpp_afcfa843d43b4171385e2a18b6ec288be}{get\-Color} (\hyperlink{DataDefinition_8h_a17b26c913a8eb52ca9efdc06681981b7}{N\-O\-D\-E} $\ast$node, int $\ast$fo, int $\ast$sol)
+\item 
+void \hyperlink{grasp_8cpp_a8b702a9434f7145e69ce372fb712171e}{create\-Graph} (\hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{output\-For\-Coloring})
+\item 
+int $\ast$ \hyperlink{grasp_8cpp_af11c331e2214bc02a7839fdde8c69183}{grasp\-Graph\-Coloring} (int max\-Iter, \hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{output\-For\-Coloring}, int $\ast$\hyperlink{server_8cpp_a08ddc6ed3452290d5165e02bbe46d08b}{n\-\_\-col})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{grasp_8cpp_aee3411655ef6bb273aec80d1ca9f6094}{n\-\_\-nodes}
+\item 
+int \hyperlink{grasp_8cpp_aa9bc6f802d505dd94ea7d9414f304200}{m\-\_\-edges}
+\item 
+int \hyperlink{grasp_8cpp_a8426849406ea58f92d7bd358a9f97b15}{fo\-\_\-star}
+\item 
+int \hyperlink{grasp_8cpp_adfed55b92ded4adea8686fe2014f85cb}{max\-Iterations}
+\item 
+int \hyperlink{grasp_8cpp_ae79c2acd1a014de0ff504f69b0194937}{descending}
+\item 
+\hyperlink{DataDefinition_8h_a17b26c913a8eb52ca9efdc06681981b7}{N\-O\-D\-E} $\ast$ \hyperlink{grasp_8cpp_a310ee5a2a3e67e88576d1cd5788006fc}{nodi\-\_\-grafo} = N\-U\-L\-L
+\item 
+int $\ast$ \hyperlink{grasp_8cpp_ad0307bc9a52785a6a43007325d48e878}{sol\-\_\-star} = N\-U\-L\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A file to perform the grasp algorthm. 
+
+\subsection{Function Documentation}
+\hypertarget{grasp_8cpp_aceacf4aaf6cf419efe16a5c077f363a6}{\index{grasp.\-cpp@{grasp.\-cpp}!check\-Constraints@{check\-Constraints}}
+\index{check\-Constraints@{check\-Constraints}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{check\-Constraints}]{\setlength{\rightskip}{0pt plus 5cm}void check\-Constraints (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_aceacf4aaf6cf419efe16a5c077f363a6}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_aceacf4aaf6cf419efe16a5c077f363a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8cpp_a5cc6e669bfa130d1dcf3724422c94a54}{\index{grasp.\-cpp@{grasp.\-cpp}!construct\-Greedy\-Randomized\-Solution@{construct\-Greedy\-Randomized\-Solution}}
+\index{construct\-Greedy\-Randomized\-Solution@{construct\-Greedy\-Randomized\-Solution}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{construct\-Greedy\-Randomized\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ construct\-Greedy\-Randomized\-Solution (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{fo, }
+\item[{float}]{alpha}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_a5cc6e669bfa130d1dcf3724422c94a54}
+This function provide to create an admissible solution 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_a5cc6e669bfa130d1dcf3724422c94a54_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_a5cc6e669bfa130d1dcf3724422c94a54_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8cpp_a8b702a9434f7145e69ce372fb712171e}{\index{grasp.\-cpp@{grasp.\-cpp}!create\-Graph@{create\-Graph}}
+\index{create\-Graph@{create\-Graph}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{create\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}void create\-Graph (
+\begin{DoxyParamCaption}
+\item[{{\bf cf\-\_\-data}}]{output\-For\-Coloring}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_a8b702a9434f7145e69ce372fb712171e}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_a8b702a9434f7145e69ce372fb712171e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8cpp_afcfa843d43b4171385e2a18b6ec288be}{\index{grasp.\-cpp@{grasp.\-cpp}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Color (
+\begin{DoxyParamCaption}
+\item[{{\bf N\-O\-D\-E} $\ast$}]{node, }
+\item[{int $\ast$}]{fo, }
+\item[{int $\ast$}]{sol}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_afcfa843d43b4171385e2a18b6ec288be}
+This function identifies, in according to the node's neighborhood, the color that can be associated to the node 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_afcfa843d43b4171385e2a18b6ec288be_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8cpp_af11c331e2214bc02a7839fdde8c69183}{\index{grasp.\-cpp@{grasp.\-cpp}!grasp\-Graph\-Coloring@{grasp\-Graph\-Coloring}}
+\index{grasp\-Graph\-Coloring@{grasp\-Graph\-Coloring}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{grasp\-Graph\-Coloring}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ grasp\-Graph\-Coloring (
+\begin{DoxyParamCaption}
+\item[{int}]{max\-Iter, }
+\item[{{\bf cf\-\_\-data}}]{output\-For\-Coloring, }
+\item[{int $\ast$}]{n\-\_\-col}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_af11c331e2214bc02a7839fdde8c69183}
+Main Function -\/ Input\-: Max Numbers Of G\-R\-A\-S\-P's Iterations 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_af11c331e2214bc02a7839fdde8c69183_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_af11c331e2214bc02a7839fdde8c69183_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8cpp_a126590b25b2890594214115a21ccb1b3}{\index{grasp.\-cpp@{grasp.\-cpp}!grasp\-Process@{grasp\-Process}}
+\index{grasp\-Process@{grasp\-Process}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{grasp\-Process}]{\setlength{\rightskip}{0pt plus 5cm}void grasp\-Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_a126590b25b2890594214115a21ccb1b3}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_a126590b25b2890594214115a21ccb1b3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_a126590b25b2890594214115a21ccb1b3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8cpp_af5940778e8e7e9d5c37e9e1510a8851d}{\index{grasp.\-cpp@{grasp.\-cpp}!local\-Search@{local\-Search}}
+\index{local\-Search@{local\-Search}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{local\-Search}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ local\-Search (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol, }
+\item[{int $\ast$}]{fo}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_af5940778e8e7e9d5c37e9e1510a8851d}
+This function try to improve the current solution. This procedure try to decrese the number of color utilized 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_af5940778e8e7e9d5c37e9e1510a8851d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8cpp_a6f1c1271ab34597c22c4b7a2d25328a3}{\index{grasp.\-cpp@{grasp.\-cpp}!make\-R\-C\-L@{make\-R\-C\-L}}
+\index{make\-R\-C\-L@{make\-R\-C\-L}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{make\-R\-C\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-C\-L\-\_\-\-L\-I\-S\-T}$\ast$ make\-R\-C\-L (
+\begin{DoxyParamCaption}
+\item[{float}]{alpha, }
+\item[{int $\ast$}]{n\-\_\-rcl, }
+\item[{int $\ast$}]{sol}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_a6f1c1271ab34597c22c4b7a2d25328a3}
+This function provide to create a Restricted Candidates List 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_a6f1c1271ab34597c22c4b7a2d25328a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{grasp_8cpp_add7bcf8b26bd5a2d232797368fa48d89}{\index{grasp.\-cpp@{grasp.\-cpp}!run\-Grasp@{run\-Grasp}}
+\index{run\-Grasp@{run\-Grasp}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{run\-Grasp}]{\setlength{\rightskip}{0pt plus 5cm}void run\-Grasp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{grasp_8cpp_add7bcf8b26bd5a2d232797368fa48d89}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_add7bcf8b26bd5a2d232797368fa48d89_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{grasp_8cpp_add7bcf8b26bd5a2d232797368fa48d89_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{grasp_8cpp_ae79c2acd1a014de0ff504f69b0194937}{\index{grasp.\-cpp@{grasp.\-cpp}!descending@{descending}}
+\index{descending@{descending}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{descending}]{\setlength{\rightskip}{0pt plus 5cm}int descending}}\label{grasp_8cpp_ae79c2acd1a014de0ff504f69b0194937}
+\hypertarget{grasp_8cpp_a8426849406ea58f92d7bd358a9f97b15}{\index{grasp.\-cpp@{grasp.\-cpp}!fo\-\_\-star@{fo\-\_\-star}}
+\index{fo\-\_\-star@{fo\-\_\-star}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{fo\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int fo\-\_\-star}}\label{grasp_8cpp_a8426849406ea58f92d7bd358a9f97b15}
+\hypertarget{grasp_8cpp_aa9bc6f802d505dd94ea7d9414f304200}{\index{grasp.\-cpp@{grasp.\-cpp}!m\-\_\-edges@{m\-\_\-edges}}
+\index{m\-\_\-edges@{m\-\_\-edges}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{m\-\_\-edges}]{\setlength{\rightskip}{0pt plus 5cm}int m\-\_\-edges}}\label{grasp_8cpp_aa9bc6f802d505dd94ea7d9414f304200}
+\hypertarget{grasp_8cpp_adfed55b92ded4adea8686fe2014f85cb}{\index{grasp.\-cpp@{grasp.\-cpp}!max\-Iterations@{max\-Iterations}}
+\index{max\-Iterations@{max\-Iterations}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{max\-Iterations}]{\setlength{\rightskip}{0pt plus 5cm}int max\-Iterations}}\label{grasp_8cpp_adfed55b92ded4adea8686fe2014f85cb}
+\hypertarget{grasp_8cpp_aee3411655ef6bb273aec80d1ca9f6094}{\index{grasp.\-cpp@{grasp.\-cpp}!n\-\_\-nodes@{n\-\_\-nodes}}
+\index{n\-\_\-nodes@{n\-\_\-nodes}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{n\-\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}int n\-\_\-nodes}}\label{grasp_8cpp_aee3411655ef6bb273aec80d1ca9f6094}
+\hypertarget{grasp_8cpp_a310ee5a2a3e67e88576d1cd5788006fc}{\index{grasp.\-cpp@{grasp.\-cpp}!nodi\-\_\-grafo@{nodi\-\_\-grafo}}
+\index{nodi\-\_\-grafo@{nodi\-\_\-grafo}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{nodi\-\_\-grafo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-O\-D\-E}$\ast$ nodi\-\_\-grafo = N\-U\-L\-L}}\label{grasp_8cpp_a310ee5a2a3e67e88576d1cd5788006fc}
+\hypertarget{grasp_8cpp_ad0307bc9a52785a6a43007325d48e878}{\index{grasp.\-cpp@{grasp.\-cpp}!sol\-\_\-star@{sol\-\_\-star}}
+\index{sol\-\_\-star@{sol\-\_\-star}!grasp.cpp@{grasp.\-cpp}}
+\subsubsection[{sol\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ sol\-\_\-star = N\-U\-L\-L}}\label{grasp_8cpp_ad0307bc9a52785a6a43007325d48e878}

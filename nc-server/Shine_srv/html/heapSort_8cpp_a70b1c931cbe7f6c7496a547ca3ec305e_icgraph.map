@@ -1,0 +1,10 @@
+<map id="maxheap_property" name="maxheap_property">
+<area shape="rect" id="node2" href="$heapSort_8h.html#aa73580f1b9f535667860da278a8c976e" title="maxheap_property" alt="" coords="185,56,314,83"/>
+<area shape="rect" id="node3" href="$heapSort_8h.html#a482ad11dc8826e43d049e27969351125" title="build_maxheap" alt="" coords="363,5,472,32"/>
+<area shape="rect" id="node4" href="$heapSort_8h.html#a515a53946f6d0a8f5d1e6a39bd735ff8" title="max_heap_sort" alt="" coords="521,56,631,83"/>
+<area shape="rect" id="node5" href="$heapSort_8h.html#af4c22de11e81fff1629ea621c39b554d" title="ascendingHeapSort" alt="" coords="680,56,816,83"/>
+<area shape="rect" id="node6" href="$grasp_8h.html#af11c331e2214bc02a7839fdde8c69183" title="graspGraphColoring" alt="" coords="865,56,1002,83"/>
+<area shape="rect" id="node7" href="$server_8cpp.html#ab831c44f8ddb7ea2b41ada3f8c263d80" title="taskUdp" alt="" coords="1051,56,1122,83"/>
+<area shape="rect" id="node8" href="$server_8cpp.html#a7b062b307f683d3473961f5191aa892b" title="taskTCP" alt="" coords="1171,56,1245,83"/>
+<area shape="rect" id="node9" href="$server_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="1293,56,1344,83"/>
+</map>

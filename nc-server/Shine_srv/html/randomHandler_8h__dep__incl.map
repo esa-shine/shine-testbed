@@ -1,0 +1,12 @@
+<map id="randomHandler.h" name="randomHandler.h">
+<area shape="rect" id="node2" href="$ConflictGraph_8h.html" title="ConflictGraph.h" alt="" coords="133,80,245,107"/>
+<area shape="rect" id="node4" href="$server_8cpp.html" title="The main File to use the Server. " alt="" coords="199,229,280,256"/>
+<area shape="rect" id="node5" href="$EnvironmentSetup_8h.html" title="EnvironmentSetup.h" alt="" coords="366,80,505,107"/>
+<area shape="rect" id="node7" href="$LibShine_8h.html" title="LibShine.h" alt="" coords="611,155,692,181"/>
+<area shape="rect" id="node9" href="$grasp_8h.html" title="grasp.h" alt="" coords="277,80,341,107"/>
+<area shape="rect" id="node11" href="$randomHandler_8cpp.html" title="A file to generate random elements. " alt="" coords="582,80,716,107"/>
+<area shape="rect" id="node3" href="$ConflictGraph_8cpp.html" title="File to generate the confict graph to perform the algorithm. " alt="" coords="25,155,151,181"/>
+<area shape="rect" id="node6" href="$EnvironmentSetup_8cpp.html" title="A file to setup the environment when the server starts. " alt="" coords="432,155,585,181"/>
+<area shape="rect" id="node8" href="$LibShine_8cpp.html" title="A file to execute the main functions. " alt="" coords="603,229,700,256"/>
+<area shape="rect" id="node10" href="$grasp_8cpp.html" title="A file to perform the grasp algorthm. " alt="" coords="278,155,356,181"/>
+</map>

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['n_5fcol',['n_col',['../server_8cpp.html#a08ddc6ed3452290d5165e02bbe46d08b',1,'server.cpp']]],
+  ['n_5fnodes',['n_nodes',['../grasp_8cpp.html#aee3411655ef6bb273aec80d1ca9f6094',1,'grasp.cpp']]],
+  ['n_5fnodi',['n_nodi',['../structCF__DATA.html#a50c302ea5a7570881d844eb0b2a6c930',1,'CF_DATA::n_nodi()'],['../ConflictGraph_8cpp.html#a17649fbb0d4033d3a77ae6c5831c21f2',1,'n_nodi():&#160;ConflictGraph.cpp']]],
+  ['n_5fnodi_5fhgcc',['n_nodi_hgcc',['../hgcc_8cpp.html#a2407d12e7fb76a1eb156152c779d58b4',1,'hgcc.cpp']]],
+  ['n_5futenti',['n_utenti',['../structDATA__MATRIX.html#aae6daea8805e8718aa68a84bcca6241b',1,'DATA_MATRIX::n_utenti()'],['../ConflictGraph_8cpp.html#a2f6dbcf4fcf737ed9e4bcfbba6a961fa',1,'n_utenti():&#160;ConflictGraph.cpp']]],
+  ['n_5futenti_5fenv',['n_utenti_env',['../EnvironmentSetup_8cpp.html#ad60b7b31764dce9b0aca39b058497cd0',1,'EnvironmentSetup.cpp']]],
+  ['n_5futenti_5fhgcc',['n_utenti_hgcc',['../hgcc_8cpp.html#ab4c89a6570c7219f0e71f25b99a12a15',1,'hgcc.cpp']]],
+  ['next',['next',['../structNODE__LIST__STRUCT.html#a16cafa75205cd9acf5039b4502613f1a',1,'NODE_LIST_STRUCT::next()'],['../structNODE__SUBSET__STRUCT.html#a23d8738ae1b4513d607523d289e40ace',1,'NODE_SUBSET_STRUCT::next()'],['../structRANDOM__LIST.html#a69d18749d83881f09a2742cd6ba19d28',1,'RANDOM_LIST::next()']]],
+  ['nfiles',['nFiles',['../structConfig.html#a4a5c2783f6aa2283fb3343082bff5ef7',1,'Config']]],
+  ['nodes',['nodes',['../structCF__DATA.html#aa790d2fc6304b584e3d6a5afb95cf5c4',1,'CF_DATA::nodes()'],['../ConflictGraph_8cpp.html#ad37a9f79256fe09ba826524c993d5225',1,'nodes():&#160;ConflictGraph.cpp']]],
+  ['nodes_5fhgcc',['nodes_hgcc',['../hgcc_8cpp.html#a533b778b10eb1e843db39e19553ecaf3',1,'hgcc.cpp']]],
+  ['nodes_5flist',['nodes_list',['../structLIST__STRUCT.html#a480f01d85e0c69f63eeeb62c4378e19e',1,'LIST_STRUCT::nodes_list()'],['../structSUBSET__STRUCT.html#a61f3350ae28b746fea56129536e73ec1',1,'SUBSET_STRUCT::nodes_list()']]],
+  ['nodi_5fgrafo',['nodi_grafo',['../grasp_8cpp.html#a310ee5a2a3e67e88576d1cd5788006fc',1,'grasp.cpp']]],
+  ['nothread',['noThread',['../server_8cpp.html#affd36f8acb85b65f5c2856d0a5375116',1,'server.cpp']]],
+  ['num_5fchunks',['num_chunks',['../structHEADER__TRANSMISSION.html#abee64c077b815db300d99d1e2a273af7',1,'HEADER_TRANSMISSION']]],
+  ['numero_5futenti',['numero_utenti',['../server_8cpp.html#aa2631f25e19535d403ff16ce392a2ab3',1,'server.cpp']]]
+];

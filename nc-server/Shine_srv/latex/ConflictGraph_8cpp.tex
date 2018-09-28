@@ -1,0 +1,199 @@
+\hypertarget{ConflictGraph_8cpp}{\section{Conflict\-Graph.\-cpp File Reference}
+\label{ConflictGraph_8cpp}\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}}
+}
+
+
+File to generate the confict graph to perform the algorithm.  
+
+
+{\ttfamily \#include \char`\"{}Conflict\-Graph.\-h\char`\"{}}\\*
+Include dependency graph for Conflict\-Graph.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ConflictGraph_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ConflictGraph_8cpp_ac3cb25bddc4ccb9b9e9b05d5d6e10f15}{compute\-Number\-Of\-Nodes} ()
+\item 
+void \hyperlink{ConflictGraph_8cpp_a6de92953bce9d470b645baaa6c546c8c}{make\-Nodes} ()
+\item 
+void \hyperlink{ConflictGraph_8cpp_abc996d20ffbbc06664b48239600ff7c0}{make\-Edges} ()
+\item 
+void \hyperlink{ConflictGraph_8cpp_a2d6220650beea54f048db3face9c7b84}{\-\_\-dealloc} ()
+\item 
+\hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{ConflictGraph_8cpp_a1cc64a8f4dc3bd9f1c991abd75432539}{conflict\-Graph\-Generator} (\hyperlink{DataDefinition_8h_aa8ca5572763177379406da03176d0ef9}{data\-\_\-matrix} \hyperlink{server_8cpp_aae9fcbe0ed0ac37c492508691173561d}{data})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{ConflictGraph_8cpp_a2f6dbcf4fcf737ed9e4bcfbba6a961fa}{n\-\_\-utenti}
+\item 
+int \hyperlink{ConflictGraph_8cpp_abd950309ddc65353a014b00c8c4a11b0}{m\-\_\-files}
+\item 
+int $\ast$ \hyperlink{ConflictGraph_8cpp_a1d12de4f14bfff1b963f424aac823fd5}{b\-\_\-chuncks}
+\item 
+int \hyperlink{ConflictGraph_8cpp_a17649fbb0d4033d3a77ae6c5831c21f2}{n\-\_\-nodi}
+\item 
+int \hyperlink{ConflictGraph_8cpp_ab703df34671c9674648d9da3a1d4059a}{m\-\_\-archi}
+\item 
+int $\ast$$\ast$$\ast$ \hyperlink{ConflictGraph_8cpp_a22d1b39fa2b1c594a8f6d2d29df487c0}{Ind} = N\-U\-L\-L
+\item 
+int $\ast$ \hyperlink{ConflictGraph_8cpp_a573d3a82580801c056cba08685045cd5}{Q} = N\-U\-L\-L
+\item 
+int $\ast$$\ast$ \hyperlink{ConflictGraph_8cpp_a8f647323f1ed413f8bf0d8fd6029d475}{Q\-\_\-chuncks} = N\-U\-L\-L
+\item 
+int $\ast$$\ast$ \hyperlink{ConflictGraph_8cpp_af5bff42832b4870240fe6283fe657582}{Matrix\-\_\-\-Adj} = N\-U\-L\-L
+\item 
+\hyperlink{DataDefinition_8h_a65ad3efc6589d7d39f5a6813fd74a7d2}{nodo} $\ast$ \hyperlink{ConflictGraph_8cpp_ad37a9f79256fe09ba826524c993d5225}{nodes} = N\-U\-L\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File to generate the confict graph to perform the algorithm. 
+
+\subsection{Function Documentation}
+\hypertarget{ConflictGraph_8cpp_a2d6220650beea54f048db3face9c7b84}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!\-\_\-dealloc@{\-\_\-dealloc}}
+\index{\-\_\-dealloc@{\-\_\-dealloc}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{\-\_\-dealloc}]{\setlength{\rightskip}{0pt plus 5cm}void \-\_\-dealloc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ConflictGraph_8cpp_a2d6220650beea54f048db3face9c7b84}
+\hypertarget{ConflictGraph_8cpp_ac3cb25bddc4ccb9b9e9b05d5d6e10f15}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!compute\-Number\-Of\-Nodes@{compute\-Number\-Of\-Nodes}}
+\index{compute\-Number\-Of\-Nodes@{compute\-Number\-Of\-Nodes}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{compute\-Number\-Of\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}void compute\-Number\-Of\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ConflictGraph_8cpp_ac3cb25bddc4ccb9b9e9b05d5d6e10f15}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ConflictGraph_8cpp_ac3cb25bddc4ccb9b9e9b05d5d6e10f15_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ConflictGraph_8cpp_a1cc64a8f4dc3bd9f1c991abd75432539}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!conflict\-Graph\-Generator@{conflict\-Graph\-Generator}}
+\index{conflict\-Graph\-Generator@{conflict\-Graph\-Generator}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{conflict\-Graph\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cf\-\_\-data} conflict\-Graph\-Generator (
+\begin{DoxyParamCaption}
+\item[{{\bf data\-\_\-matrix}}]{data}
+\end{DoxyParamCaption}
+)}}\label{ConflictGraph_8cpp_a1cc64a8f4dc3bd9f1c991abd75432539}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ConflictGraph_8cpp_a1cc64a8f4dc3bd9f1c991abd75432539_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ConflictGraph_8cpp_a1cc64a8f4dc3bd9f1c991abd75432539_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ConflictGraph_8cpp_abc996d20ffbbc06664b48239600ff7c0}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!make\-Edges@{make\-Edges}}
+\index{make\-Edges@{make\-Edges}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{make\-Edges}]{\setlength{\rightskip}{0pt plus 5cm}void make\-Edges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ConflictGraph_8cpp_abc996d20ffbbc06664b48239600ff7c0}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ConflictGraph_8cpp_abc996d20ffbbc06664b48239600ff7c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{ConflictGraph_8cpp_a6de92953bce9d470b645baaa6c546c8c}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!make\-Nodes@{make\-Nodes}}
+\index{make\-Nodes@{make\-Nodes}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{make\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}void make\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{ConflictGraph_8cpp_a6de92953bce9d470b645baaa6c546c8c}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{ConflictGraph_8cpp_a6de92953bce9d470b645baaa6c546c8c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ConflictGraph_8cpp_a6de92953bce9d470b645baaa6c546c8c_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{ConflictGraph_8cpp_a1d12de4f14bfff1b963f424aac823fd5}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!b\-\_\-chuncks@{b\-\_\-chuncks}}
+\index{b\-\_\-chuncks@{b\-\_\-chuncks}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{b\-\_\-chuncks}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ b\-\_\-chuncks}}\label{ConflictGraph_8cpp_a1d12de4f14bfff1b963f424aac823fd5}
+\hypertarget{ConflictGraph_8cpp_a22d1b39fa2b1c594a8f6d2d29df487c0}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!Ind@{Ind}}
+\index{Ind@{Ind}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{Ind}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$$\ast$ Ind = N\-U\-L\-L}}\label{ConflictGraph_8cpp_a22d1b39fa2b1c594a8f6d2d29df487c0}
+\hypertarget{ConflictGraph_8cpp_ab703df34671c9674648d9da3a1d4059a}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!m\-\_\-archi@{m\-\_\-archi}}
+\index{m\-\_\-archi@{m\-\_\-archi}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{m\-\_\-archi}]{\setlength{\rightskip}{0pt plus 5cm}int m\-\_\-archi}}\label{ConflictGraph_8cpp_ab703df34671c9674648d9da3a1d4059a}
+\hypertarget{ConflictGraph_8cpp_abd950309ddc65353a014b00c8c4a11b0}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!m\-\_\-files@{m\-\_\-files}}
+\index{m\-\_\-files@{m\-\_\-files}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{m\-\_\-files}]{\setlength{\rightskip}{0pt plus 5cm}int m\-\_\-files}}\label{ConflictGraph_8cpp_abd950309ddc65353a014b00c8c4a11b0}
+\hypertarget{ConflictGraph_8cpp_af5bff42832b4870240fe6283fe657582}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!Matrix\-\_\-\-Adj@{Matrix\-\_\-\-Adj}}
+\index{Matrix\-\_\-\-Adj@{Matrix\-\_\-\-Adj}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{Matrix\-\_\-\-Adj}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Matrix\-\_\-\-Adj = N\-U\-L\-L}}\label{ConflictGraph_8cpp_af5bff42832b4870240fe6283fe657582}
+\hypertarget{ConflictGraph_8cpp_a17649fbb0d4033d3a77ae6c5831c21f2}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!n\-\_\-nodi@{n\-\_\-nodi}}
+\index{n\-\_\-nodi@{n\-\_\-nodi}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{n\-\_\-nodi}]{\setlength{\rightskip}{0pt plus 5cm}int n\-\_\-nodi}}\label{ConflictGraph_8cpp_a17649fbb0d4033d3a77ae6c5831c21f2}
+\hypertarget{ConflictGraph_8cpp_a2f6dbcf4fcf737ed9e4bcfbba6a961fa}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!n\-\_\-utenti@{n\-\_\-utenti}}
+\index{n\-\_\-utenti@{n\-\_\-utenti}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{n\-\_\-utenti}]{\setlength{\rightskip}{0pt plus 5cm}int n\-\_\-utenti}}\label{ConflictGraph_8cpp_a2f6dbcf4fcf737ed9e4bcfbba6a961fa}
+\hypertarget{ConflictGraph_8cpp_ad37a9f79256fe09ba826524c993d5225}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!nodes@{nodes}}
+\index{nodes@{nodes}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nodo}$\ast$ nodes = N\-U\-L\-L}}\label{ConflictGraph_8cpp_ad37a9f79256fe09ba826524c993d5225}
+\hypertarget{ConflictGraph_8cpp_a573d3a82580801c056cba08685045cd5}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!Q@{Q}}
+\index{Q@{Q}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{Q}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ Q = N\-U\-L\-L}}\label{ConflictGraph_8cpp_a573d3a82580801c056cba08685045cd5}
+\hypertarget{ConflictGraph_8cpp_a8f647323f1ed413f8bf0d8fd6029d475}{\index{Conflict\-Graph.\-cpp@{Conflict\-Graph.\-cpp}!Q\-\_\-chuncks@{Q\-\_\-chuncks}}
+\index{Q\-\_\-chuncks@{Q\-\_\-chuncks}!ConflictGraph.cpp@{Conflict\-Graph.\-cpp}}
+\subsubsection[{Q\-\_\-chuncks}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Q\-\_\-chuncks = N\-U\-L\-L}}\label{ConflictGraph_8cpp_a8f647323f1ed413f8bf0d8fd6029d475}

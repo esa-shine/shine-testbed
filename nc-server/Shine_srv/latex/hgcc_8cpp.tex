@@ -1,0 +1,291 @@
+\hypertarget{hgcc_8cpp}{\section{hgcc.\-cpp File Reference}
+\label{hgcc_8cpp}\index{hgcc.\-cpp@{hgcc.\-cpp}}
+}
+
+
+A file to perform the hgcc algorithm.  
+
+
+{\ttfamily \#include \char`\"{}hgcc.\-h\char`\"{}}\\*
+Include dependency graph for hgcc.\-cpp\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{hgcc_8cpp_a63ef20326c3bdcf93fb3b71f6c1906e3}{create\-Graph\-For\-H\-G\-C\-C} (\hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{output\-For\-Coloring})
+\item 
+void \hyperlink{hgcc_8cpp_a2e2df49bc0019f570ef2c8b153b83913}{create\-Cache\-Matrix} (\hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{output\-For\-Coloring})
+\item 
+void \hyperlink{hgcc_8cpp_a9dcc9f324111e127516eb7812e723784}{check\-Constraints\-H\-G\-C\-C} (int $\ast$sol)
+\item 
+void \hyperlink{hgcc_8cpp_a85f18ae20f46bb320ae79f3fe1aa7bf6}{compute\-Subsets\-List} ()
+\item 
+void \hyperlink{hgcc_8cpp_a1ba3876e9bdfff5967351ac9fee5dc21}{run\-Process} ()
+\item 
+void \hyperlink{hgcc_8cpp_a4df1c7c9c7a5a7db22f4395fa6b5dffb}{I\-G\-C\-C\-\_\-\-Coloring\-Process} ()
+\item 
+int $\ast$ \hyperlink{hgcc_8cpp_a804d79e4e3200dfa19c0a6516c68f0fa}{local\-Search} (int $\ast$fo)
+\item 
+int $\ast$ \hyperlink{hgcc_8cpp_ae7aa49ecc3a19a37aac8608f4387dc1a}{h\-G\-C\-C} (int $\ast$\hyperlink{server_8cpp_a08ddc6ed3452290d5165e02bbe46d08b}{n\-\_\-col}, \hyperlink{DataDefinition_8h_aa8ca5572763177379406da03176d0ef9}{data\-\_\-matrix} \hyperlink{server_8cpp_aae9fcbe0ed0ac37c492508691173561d}{data}, \hyperlink{DataDefinition_8h_a1601a7ee6f4213e7d70430cefa083def}{cf\-\_\-data} \hyperlink{server_8cpp_a7304f2f0c01460ea55ddd50e50918007}{output\-For\-Coloring})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{hgcc_8cpp_a2407d12e7fb76a1eb156152c779d58b4}{n\-\_\-nodi\-\_\-hgcc}
+\item 
+int \hyperlink{hgcc_8cpp_a340f72851309a2f0494d262fa6869c7f}{m\-\_\-archi\-\_\-hgcc}
+\item 
+int \hyperlink{hgcc_8cpp_acd0f4c2fd90ced00fd150e6a16455245}{fostar}
+\item 
+int \hyperlink{hgcc_8cpp_ab4c89a6570c7219f0e71f25b99a12a15}{n\-\_\-utenti\-\_\-hgcc}
+\item 
+int \hyperlink{hgcc_8cpp_a676fc8ff0c651b0bc535e271dde8eccf}{m\-\_\-files\-\_\-hgcc}
+\item 
+int $\ast$ \hyperlink{hgcc_8cpp_ad5916ab0f65f1a34b00c1de93fc922aa}{b\-\_\-chuncks\-\_\-hgcc}
+\item 
+\hyperlink{DataDefinition_8h_a17b26c913a8eb52ca9efdc06681981b7}{N\-O\-D\-E} $\ast$ \hyperlink{hgcc_8cpp_a533b778b10eb1e843db39e19553ecaf3}{nodes\-\_\-hgcc} = N\-U\-L\-L
+\item 
+int $\ast$ \hyperlink{hgcc_8cpp_a7d8d16ba4947e122b5f5e35acaafa3d6}{solution\-\_\-star} = N\-U\-L\-L
+\item 
+int $\ast$$\ast$$\ast$ \hyperlink{hgcc_8cpp_ad42fbb73c2bc5008954fc579ce786818}{Ind\-\_\-hgcc} = N\-U\-L\-L
+\item 
+\hyperlink{DataDefinition_8h_a143b53448976e9b1832cf6ae6694a701}{L\-I\-S\-T} $\ast$ \hyperlink{hgcc_8cpp_a8d7230c643206abe54dd635eaf633c2f}{\-\_\-list} = N\-U\-L\-L
+\item 
+int $\ast$$\ast$ \hyperlink{hgcc_8cpp_acb3c8e1d4578afbcf8698ece8e7bba24}{Q\-\_\-hgcc} = N\-U\-L\-L
+\item 
+int $\ast$$\ast$ \hyperlink{hgcc_8cpp_a4a5a51df8703eabc8cc5b91f060ff84c}{adj} = N\-U\-L\-L
+\item 
+\hyperlink{DataDefinition_8h_a38c2e6950c1677f28fba2435bd224bb9}{S\-U\-B\-S\-E\-T} $\ast$ \hyperlink{hgcc_8cpp_a006b07df7fe69bb4371ae950f6aa49f5}{subsets\-\_\-array} = N\-U\-L\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A file to perform the hgcc algorithm. 
+
+\subsection{Function Documentation}
+\hypertarget{hgcc_8cpp_a9dcc9f324111e127516eb7812e723784}{\index{hgcc.\-cpp@{hgcc.\-cpp}!check\-Constraints\-H\-G\-C\-C@{check\-Constraints\-H\-G\-C\-C}}
+\index{check\-Constraints\-H\-G\-C\-C@{check\-Constraints\-H\-G\-C\-C}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{check\-Constraints\-H\-G\-C\-C}]{\setlength{\rightskip}{0pt plus 5cm}void check\-Constraints\-H\-G\-C\-C (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol}
+\end{DoxyParamCaption}
+)}}\label{hgcc_8cpp_a9dcc9f324111e127516eb7812e723784}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_a9dcc9f324111e127516eb7812e723784_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{hgcc_8cpp_a85f18ae20f46bb320ae79f3fe1aa7bf6}{\index{hgcc.\-cpp@{hgcc.\-cpp}!compute\-Subsets\-List@{compute\-Subsets\-List}}
+\index{compute\-Subsets\-List@{compute\-Subsets\-List}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{compute\-Subsets\-List}]{\setlength{\rightskip}{0pt plus 5cm}void compute\-Subsets\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{hgcc_8cpp_a85f18ae20f46bb320ae79f3fe1aa7bf6}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_a85f18ae20f46bb320ae79f3fe1aa7bf6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{hgcc_8cpp_a2e2df49bc0019f570ef2c8b153b83913}{\index{hgcc.\-cpp@{hgcc.\-cpp}!create\-Cache\-Matrix@{create\-Cache\-Matrix}}
+\index{create\-Cache\-Matrix@{create\-Cache\-Matrix}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{create\-Cache\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void create\-Cache\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf cf\-\_\-data}}]{output\-For\-Coloring}
+\end{DoxyParamCaption}
+)}}\label{hgcc_8cpp_a2e2df49bc0019f570ef2c8b153b83913}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_a2e2df49bc0019f570ef2c8b153b83913_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{hgcc_8cpp_a63ef20326c3bdcf93fb3b71f6c1906e3}{\index{hgcc.\-cpp@{hgcc.\-cpp}!create\-Graph\-For\-H\-G\-C\-C@{create\-Graph\-For\-H\-G\-C\-C}}
+\index{create\-Graph\-For\-H\-G\-C\-C@{create\-Graph\-For\-H\-G\-C\-C}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{create\-Graph\-For\-H\-G\-C\-C}]{\setlength{\rightskip}{0pt plus 5cm}void create\-Graph\-For\-H\-G\-C\-C (
+\begin{DoxyParamCaption}
+\item[{{\bf cf\-\_\-data}}]{output\-For\-Coloring}
+\end{DoxyParamCaption}
+)}}\label{hgcc_8cpp_a63ef20326c3bdcf93fb3b71f6c1906e3}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_a63ef20326c3bdcf93fb3b71f6c1906e3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{hgcc_8cpp_ae7aa49ecc3a19a37aac8608f4387dc1a}{\index{hgcc.\-cpp@{hgcc.\-cpp}!h\-G\-C\-C@{h\-G\-C\-C}}
+\index{h\-G\-C\-C@{h\-G\-C\-C}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{h\-G\-C\-C}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ h\-G\-C\-C (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{n\-\_\-col, }
+\item[{{\bf data\-\_\-matrix}}]{data, }
+\item[{{\bf cf\-\_\-data}}]{output\-For\-Coloring}
+\end{DoxyParamCaption}
+)}}\label{hgcc_8cpp_ae7aa49ecc3a19a37aac8608f4387dc1a}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_ae7aa49ecc3a19a37aac8608f4387dc1a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_ae7aa49ecc3a19a37aac8608f4387dc1a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{hgcc_8cpp_a4df1c7c9c7a5a7db22f4395fa6b5dffb}{\index{hgcc.\-cpp@{hgcc.\-cpp}!I\-G\-C\-C\-\_\-\-Coloring\-Process@{I\-G\-C\-C\-\_\-\-Coloring\-Process}}
+\index{I\-G\-C\-C\-\_\-\-Coloring\-Process@{I\-G\-C\-C\-\_\-\-Coloring\-Process}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{I\-G\-C\-C\-\_\-\-Coloring\-Process}]{\setlength{\rightskip}{0pt plus 5cm}void I\-G\-C\-C\-\_\-\-Coloring\-Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{hgcc_8cpp_a4df1c7c9c7a5a7db22f4395fa6b5dffb}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_a4df1c7c9c7a5a7db22f4395fa6b5dffb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{hgcc_8cpp_a804d79e4e3200dfa19c0a6516c68f0fa}{\index{hgcc.\-cpp@{hgcc.\-cpp}!local\-Search@{local\-Search}}
+\index{local\-Search@{local\-Search}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{local\-Search}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ local\-Search (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{fo}
+\end{DoxyParamCaption}
+)}}\label{hgcc_8cpp_a804d79e4e3200dfa19c0a6516c68f0fa}
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_a804d79e4e3200dfa19c0a6516c68f0fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{hgcc_8cpp_a1ba3876e9bdfff5967351ac9fee5dc21}{\index{hgcc.\-cpp@{hgcc.\-cpp}!run\-Process@{run\-Process}}
+\index{run\-Process@{run\-Process}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{run\-Process}]{\setlength{\rightskip}{0pt plus 5cm}void run\-Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{hgcc_8cpp_a1ba3876e9bdfff5967351ac9fee5dc21}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{hgcc_8cpp_a1ba3876e9bdfff5967351ac9fee5dc21_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hgcc_8cpp_a1ba3876e9bdfff5967351ac9fee5dc21_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{hgcc_8cpp_a8d7230c643206abe54dd635eaf633c2f}{\index{hgcc.\-cpp@{hgcc.\-cpp}!\-\_\-list@{\-\_\-list}}
+\index{\-\_\-list@{\-\_\-list}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-I\-S\-T}$\ast$ \-\_\-list = N\-U\-L\-L}}\label{hgcc_8cpp_a8d7230c643206abe54dd635eaf633c2f}
+\hypertarget{hgcc_8cpp_a4a5a51df8703eabc8cc5b91f060ff84c}{\index{hgcc.\-cpp@{hgcc.\-cpp}!adj@{adj}}
+\index{adj@{adj}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{adj}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ adj = N\-U\-L\-L}}\label{hgcc_8cpp_a4a5a51df8703eabc8cc5b91f060ff84c}
+\hypertarget{hgcc_8cpp_ad5916ab0f65f1a34b00c1de93fc922aa}{\index{hgcc.\-cpp@{hgcc.\-cpp}!b\-\_\-chuncks\-\_\-hgcc@{b\-\_\-chuncks\-\_\-hgcc}}
+\index{b\-\_\-chuncks\-\_\-hgcc@{b\-\_\-chuncks\-\_\-hgcc}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{b\-\_\-chuncks\-\_\-hgcc}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ b\-\_\-chuncks\-\_\-hgcc}}\label{hgcc_8cpp_ad5916ab0f65f1a34b00c1de93fc922aa}
+\hypertarget{hgcc_8cpp_acd0f4c2fd90ced00fd150e6a16455245}{\index{hgcc.\-cpp@{hgcc.\-cpp}!fostar@{fostar}}
+\index{fostar@{fostar}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{fostar}]{\setlength{\rightskip}{0pt plus 5cm}int fostar}}\label{hgcc_8cpp_acd0f4c2fd90ced00fd150e6a16455245}
+\hypertarget{hgcc_8cpp_ad42fbb73c2bc5008954fc579ce786818}{\index{hgcc.\-cpp@{hgcc.\-cpp}!Ind\-\_\-hgcc@{Ind\-\_\-hgcc}}
+\index{Ind\-\_\-hgcc@{Ind\-\_\-hgcc}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{Ind\-\_\-hgcc}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$$\ast$ Ind\-\_\-hgcc = N\-U\-L\-L}}\label{hgcc_8cpp_ad42fbb73c2bc5008954fc579ce786818}
+\hypertarget{hgcc_8cpp_a340f72851309a2f0494d262fa6869c7f}{\index{hgcc.\-cpp@{hgcc.\-cpp}!m\-\_\-archi\-\_\-hgcc@{m\-\_\-archi\-\_\-hgcc}}
+\index{m\-\_\-archi\-\_\-hgcc@{m\-\_\-archi\-\_\-hgcc}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{m\-\_\-archi\-\_\-hgcc}]{\setlength{\rightskip}{0pt plus 5cm}int m\-\_\-archi\-\_\-hgcc}}\label{hgcc_8cpp_a340f72851309a2f0494d262fa6869c7f}
+\hypertarget{hgcc_8cpp_a676fc8ff0c651b0bc535e271dde8eccf}{\index{hgcc.\-cpp@{hgcc.\-cpp}!m\-\_\-files\-\_\-hgcc@{m\-\_\-files\-\_\-hgcc}}
+\index{m\-\_\-files\-\_\-hgcc@{m\-\_\-files\-\_\-hgcc}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{m\-\_\-files\-\_\-hgcc}]{\setlength{\rightskip}{0pt plus 5cm}int m\-\_\-files\-\_\-hgcc}}\label{hgcc_8cpp_a676fc8ff0c651b0bc535e271dde8eccf}
+\hypertarget{hgcc_8cpp_a2407d12e7fb76a1eb156152c779d58b4}{\index{hgcc.\-cpp@{hgcc.\-cpp}!n\-\_\-nodi\-\_\-hgcc@{n\-\_\-nodi\-\_\-hgcc}}
+\index{n\-\_\-nodi\-\_\-hgcc@{n\-\_\-nodi\-\_\-hgcc}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{n\-\_\-nodi\-\_\-hgcc}]{\setlength{\rightskip}{0pt plus 5cm}int n\-\_\-nodi\-\_\-hgcc}}\label{hgcc_8cpp_a2407d12e7fb76a1eb156152c779d58b4}
+\hypertarget{hgcc_8cpp_ab4c89a6570c7219f0e71f25b99a12a15}{\index{hgcc.\-cpp@{hgcc.\-cpp}!n\-\_\-utenti\-\_\-hgcc@{n\-\_\-utenti\-\_\-hgcc}}
+\index{n\-\_\-utenti\-\_\-hgcc@{n\-\_\-utenti\-\_\-hgcc}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{n\-\_\-utenti\-\_\-hgcc}]{\setlength{\rightskip}{0pt plus 5cm}int n\-\_\-utenti\-\_\-hgcc}}\label{hgcc_8cpp_ab4c89a6570c7219f0e71f25b99a12a15}
+\hypertarget{hgcc_8cpp_a533b778b10eb1e843db39e19553ecaf3}{\index{hgcc.\-cpp@{hgcc.\-cpp}!nodes\-\_\-hgcc@{nodes\-\_\-hgcc}}
+\index{nodes\-\_\-hgcc@{nodes\-\_\-hgcc}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{nodes\-\_\-hgcc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf N\-O\-D\-E}$\ast$ nodes\-\_\-hgcc = N\-U\-L\-L}}\label{hgcc_8cpp_a533b778b10eb1e843db39e19553ecaf3}
+\hypertarget{hgcc_8cpp_acb3c8e1d4578afbcf8698ece8e7bba24}{\index{hgcc.\-cpp@{hgcc.\-cpp}!Q\-\_\-hgcc@{Q\-\_\-hgcc}}
+\index{Q\-\_\-hgcc@{Q\-\_\-hgcc}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{Q\-\_\-hgcc}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ Q\-\_\-hgcc = N\-U\-L\-L}}\label{hgcc_8cpp_acb3c8e1d4578afbcf8698ece8e7bba24}
+\hypertarget{hgcc_8cpp_a7d8d16ba4947e122b5f5e35acaafa3d6}{\index{hgcc.\-cpp@{hgcc.\-cpp}!solution\-\_\-star@{solution\-\_\-star}}
+\index{solution\-\_\-star@{solution\-\_\-star}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{solution\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ solution\-\_\-star = N\-U\-L\-L}}\label{hgcc_8cpp_a7d8d16ba4947e122b5f5e35acaafa3d6}
+\hypertarget{hgcc_8cpp_a006b07df7fe69bb4371ae950f6aa49f5}{\index{hgcc.\-cpp@{hgcc.\-cpp}!subsets\-\_\-array@{subsets\-\_\-array}}
+\index{subsets\-\_\-array@{subsets\-\_\-array}!hgcc.cpp@{hgcc.\-cpp}}
+\subsubsection[{subsets\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-U\-B\-S\-E\-T}$\ast$ subsets\-\_\-array = N\-U\-L\-L}}\label{hgcc_8cpp_a006b07df7fe69bb4371ae950f6aa49f5}

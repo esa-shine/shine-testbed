@@ -1,0 +1,147 @@
+\hypertarget{DecodingInput_8h}{\section{Decoding\-Input.\-h File Reference}
+\label{DecodingInput_8h}\index{Decoding\-Input.\-h@{Decoding\-Input.\-h}}
+}
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Check\-Function.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Data\-Definition.\-h\char`\"{}}\\*
+Include dependency graph for Decoding\-Input.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{DecodingInput_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{DecodingInput_8h_ad13f010e00cde34fa1346751919d194d}{\-\_\-alloc\-Arrays} (int, int $\ast$, int)
+\item 
+\hyperlink{DataDefinition_8h_aa8ca5572763177379406da03176d0ef9}{data\-\_\-matrix} \hyperlink{DecodingInput_8h_a28260d6d34d82ba38bf908322d9b0254}{from\-Array\-To\-Matrix} (int, int $\ast$, vector$<$ int $>$)
+\item 
+void \hyperlink{DecodingInput_8h_a0fc3be48ee8a5a0acfc51421b906738f}{compute\-Q\-Matrix} (int, int $\ast$)
+\item 
+void \hyperlink{DecodingInput_8h_a72344c8082937dc8376238b437f63be6}{compute\-Ind\-Matrix} (vector$<$ int $>$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{DecodingInput_8h_ad13f010e00cde34fa1346751919d194d}{\index{Decoding\-Input.\-h@{Decoding\-Input.\-h}!\-\_\-alloc\-Arrays@{\-\_\-alloc\-Arrays}}
+\index{\-\_\-alloc\-Arrays@{\-\_\-alloc\-Arrays}!DecodingInput.h@{Decoding\-Input.\-h}}
+\subsubsection[{\-\_\-alloc\-Arrays}]{\setlength{\rightskip}{0pt plus 5cm}void \-\_\-alloc\-Arrays (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int $\ast$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{DecodingInput_8h_ad13f010e00cde34fa1346751919d194d}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{DecodingInput_8h_ad13f010e00cde34fa1346751919d194d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8h_ad13f010e00cde34fa1346751919d194d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{DecodingInput_8h_a72344c8082937dc8376238b437f63be6}{\index{Decoding\-Input.\-h@{Decoding\-Input.\-h}!compute\-Ind\-Matrix@{compute\-Ind\-Matrix}}
+\index{compute\-Ind\-Matrix@{compute\-Ind\-Matrix}!DecodingInput.h@{Decoding\-Input.\-h}}
+\subsubsection[{compute\-Ind\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void compute\-Ind\-Matrix (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$}]{input}
+\end{DoxyParamCaption}
+)}}\label{DecodingInput_8h_a72344c8082937dc8376238b437f63be6}
+This is a function that provide a compute the Ind cache matrix, this matrix is a binary matrix, Ind\mbox{[}i,j,k\mbox{]} = 0 if the user 'i' not have the chunk 'k' associated to file 'j' 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8h_a72344c8082937dc8376238b437f63be6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{DecodingInput_8h_a0fc3be48ee8a5a0acfc51421b906738f}{\index{Decoding\-Input.\-h@{Decoding\-Input.\-h}!compute\-Q\-Matrix@{compute\-Q\-Matrix}}
+\index{compute\-Q\-Matrix@{compute\-Q\-Matrix}!DecodingInput.h@{Decoding\-Input.\-h}}
+\subsubsection[{compute\-Q\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void compute\-Q\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-\_\-utenti, }
+\item[{int $\ast$}]{b\-\_\-chuncks}
+\end{DoxyParamCaption}
+)}}\label{DecodingInput_8h_a0fc3be48ee8a5a0acfc51421b906738f}
+This is a function that provide a compute the Q matrix, this matrix is a binary matrix, Q\mbox{[}i,k\mbox{]} = 0 if the user 'i' have in cache the chunk 'k' related to files that he request 
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8h_a0fc3be48ee8a5a0acfc51421b906738f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{DecodingInput_8h_a28260d6d34d82ba38bf908322d9b0254}{\index{Decoding\-Input.\-h@{Decoding\-Input.\-h}!from\-Array\-To\-Matrix@{from\-Array\-To\-Matrix}}
+\index{from\-Array\-To\-Matrix@{from\-Array\-To\-Matrix}!DecodingInput.h@{Decoding\-Input.\-h}}
+\subsubsection[{from\-Array\-To\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf data\-\_\-matrix} from\-Array\-To\-Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int $\ast$}]{, }
+\item[{vector$<$ int $>$}]{}
+\end{DoxyParamCaption}
+)}}\label{DecodingInput_8h_a28260d6d34d82ba38bf908322d9b0254}
+Compute the cache binary matrix
+
+Compute the binary matrix Q 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8h_a28260d6d34d82ba38bf908322d9b0254_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecodingInput_8h_a28260d6d34d82ba38bf908322d9b0254_icgraph}
+\end{center}
+\end{figure}
+
+

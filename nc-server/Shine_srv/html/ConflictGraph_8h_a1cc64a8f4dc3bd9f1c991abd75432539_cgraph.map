@@ -1,0 +1,7 @@
+<map id="conflictGraphGenerator" name="conflictGraphGenerator">
+<area shape="rect" id="node2" href="$ConflictGraph_8cpp.html#ac3cb25bddc4ccb9b9e9b05d5d6e10f15" title="computeNumberOfNodes" alt="" coords="211,5,381,32"/>
+<area shape="rect" id="node3" href="$ConflictGraph_8cpp.html#a6de92953bce9d470b645baaa6c546c8c" title="makeNodes" alt="" coords="250,56,342,83"/>
+<area shape="rect" id="node6" href="$ConflictGraph_8cpp.html#abc996d20ffbbc06664b48239600ff7c0" title="makeEdges" alt="" coords="251,107,341,133"/>
+<area shape="rect" id="node4" href="$CheckFunction_8cpp.html#a12a11983f3c936451eabd25a2f89ceec" title="check_memory_allocation_2D" alt="" coords="429,31,627,57"/>
+<area shape="rect" id="node5" href="$CheckFunction_8cpp.html#a8f1a46d0330f18cab2b7bf5458a71d03" title="check_memory_allocation_1D" alt="" coords="429,81,627,108"/>
+</map>
