@@ -7,7 +7,7 @@ COPY config/wait-for-it.sh /wait-for-it.sh
 RUN chmod 755 /wait-for-it.sh
 
 ADD https://packages.wazuh.com/wazuhapp/wazuhapp-${WAZUH_APP_VERSION}.zip /tmp
-ADD https://raw.githubusercontent.com/wazuh/wazuh/3.6.1/extensions/elasticsearch/wazuh-elastic6-template-alerts.json /usr/share/kibana/config
+ADD https://raw.githubusercontent.com/wazuh/wazuh/3.6/extensions/elasticsearch/wazuh-elastic6-template-alerts.json /usr/share/kibana/config
 
 RUN /usr/share/kibana/bin/kibana-plugin install file:///tmp/wazuhapp-${WAZUH_APP_VERSION}.zip
 RUN chown -R kibana.kibana /usr/share/kibana
