@@ -1,0 +1,18 @@
+FROM centos:latest
+ARG WAZUH_AGENT_VERSION=3.6.1-1
+
+RUN rpm -ivh http://repository.it4i.cz/mirrors/repoforge/redhat/el7/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+RUN yum update -y
+RUN yum install -y wget curl which libpcap net-tools ifstat ethtool
+
+COPY wazuh.repo /etc/yum.repos.d/wazuh.repo
+RUN yum install -y wazuh-agent-${WAZUH_AGENT_VERSION} openscap-scanner
+ADD register.sh /register.sh
+RUN chmod +x /register.sh
+COPY ossec.conf /var/ossec/etc/ossec.conf
+
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["start"]

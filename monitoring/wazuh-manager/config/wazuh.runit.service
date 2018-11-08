@@ -1,0 +1,3 @@
+#!/bin/sh
+service wazuh-manager start
+tail -f /var/ossec/data/logs/ossec.log

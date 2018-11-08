@@ -13,9 +13,8 @@
 
 
 # Connection variables
-API_IP="192.168.100.251"
-#AGENT_IP=`ifconfig -a | sed '1,1d' | sed '2,$d' | awk '{ print $2 }'`
-AGENT_IP=any
+API_IP="192.168.200.135"
+AGENT_IP="192.168.200.128"
 API_PORT="55000"
 PROTOCOL="https"
 USER="wazuh"

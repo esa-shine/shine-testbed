@@ -1,0 +1,1 @@
+docker build --network beats --ulimit nofile=65535:65535 --ulimit memlock=-1:-1 -t mymetricbeat .

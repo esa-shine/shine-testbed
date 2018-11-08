@@ -7,6 +7,7 @@ PASSWORD="W4zuh!"
 
 #set -e
 
+if [ "$1" = 'start' ]; then
   RES=`curl -s -u $USER:$PASSWORD -k -X GET "https://$WAZUH_MANAGER:55000/agents/name/$WAZUH_AGENT?pretty" | grep error | awk '{ print $2 }' | sed 's/,//'`
   if [ "$RES" != "0" ];
   then
@@ -22,4 +23,10 @@ PASSWORD="W4zuh!"
   echo "Initializing Wazuh agent..."
   /var/ossec/bin/ossec-control start
 
-  java -Djava.security.egd=file:/dev/./urandom -Dspring.profiles.active=$PROFILE -jar /app.war
+  # tail -f /var/ossec/logs/ossec.log
+  npm start
+
+  wait
+else
+  exec "$@"
+fi

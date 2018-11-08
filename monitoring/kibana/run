@@ -1,0 +1,2 @@
+docker run -d --net server --ip 192.168.200.131 --ulimit memlock=-1:-1 \
+--memory="4g" --memory-swap="4g" --memory-swappiness=0 --publish 0.0.0.0:5601:5601/tcp mykibana

@@ -13,7 +13,7 @@
 
 
 # Connection variables
-API_IP="192.168.100.251"
+API_IP="192.168.220.1"
 #AGENT_IP=`ifconfig -a | sed '1,1d' | sed '2,$d' | awk '{ print $2 }'`
 AGENT_IP=any
 API_PORT="55000"

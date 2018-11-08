@@ -1,0 +1,10 @@
+- pipeline.id: beats
+  path.config: /usr/share/logstash/pipeline/beats.conf
+  pipeline.batch.delay: 10
+  pipeline.batch.size: 250
+  pipeline.workers: 4
+- pipeline.id: wazuh
+  path.config: /usr/share/logstash/pipeline/wazuh.conf
+  pipeline.batch.delay: 10
+  pipeline.batch.size: 250
+  pipeline.workers: 4

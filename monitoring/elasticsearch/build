@@ -1,0 +1,2 @@
+docker build --network server --ulimit nofile=65536:65536 \
+--ulimit memlock=-1:-1 --memory="2g" --memory-swap="2g" -t myelastic .

@@ -1,0 +1,3 @@
+#!/bin/sh
+service wazuh-api start
+tail -f /var/ossec/data/logs/api.log

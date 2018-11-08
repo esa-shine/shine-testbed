@@ -1,0 +1,63 @@
+<decoder name="ossec-SHINE-1">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch>^ossec: output: 'Conf File Number':</prematch>
+  <regex>^ossec: output: 'Conf File Number': (\d+)</regex>
+  <order>SHINE.conffilenumber</order>
+</decoder>
+
+<decoder name="ossec-SHINE-2">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch>^ossec: output: 'Total Package Number':</prematch>
+  <regex>^ossec: output: 'Total Package Number': (\d+)</regex>
+  <order>SHINE.totalpackagenumber</order>
+</decoder>
+
+<decoder name="ossec-SHINE-3">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch>^ossec: output: 'Used Bandwidth':</prematch>
+  <regex>^ossec: output: 'Used Bandwidth': (\d+)</regex>
+  <order>SHINE.usedbandwidth</order>
+</decoder>
+
+<decoder name="ossec-SHINE-4">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch>^ossec: output: 'Available Bandwidth':</prematch>
+  <regex>^ossec: output: 'Available Bandwidth': (\d+)</regex>
+  <order>SHINE.availablebandwidth</order>
+</decoder>
+
+<decoder name="ossec-SHINE-5">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch>^ossec: output: 'UDP received':</prematch>
+  <regex>^ossec: output: 'UDP received': (\d+)</regex>
+  <order>SHINE.udpreceived</order>
+</decoder>
+
+<decoder name="ossec-SHINE-6">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch>^ossec: output: 'UDP received errors':</prematch>
+  <regex>^ossec: output: 'UDP received errors': (\d+)</regex>
+  <order>SHINE.udpreceivederrors</order>
+</decoder>
+
+<decoder name="ossec-SHINE-7">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch>^ossec: output: 'TCP segments received':</prematch>
+  <regex>^ossec: output: 'TCP segments received': (\d+)</regex>
+  <order>SHINE.tcpsegmentsreceived</order>
+</decoder>
+
+<decoder name="ossec-SHINE-8">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch>^ossec: output: 'TCP segments retransmitted':</prematch>
+  <regex>^ossec: output: 'TCP segments retransmitted': (\d+)</regex>
+  <order>SHINE.tcpsegmentsretransmitted</order>
+</decoder>

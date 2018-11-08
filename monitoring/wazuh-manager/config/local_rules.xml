@@ -1,0 +1,70 @@
+<!-- Local rules -->
+
+<!-- Modify it at your will. -->
+
+<!-- Example -->
+<group name="local,syslog,sshd,">
+
+  <!--
+  Dec 10 01:02:02 host sshd[1234]: Failed none for root from 1.1.1.1 port 1066 ssh2
+  -->
+  <rule id="100001" level="5">
+    <if_sid>5716</if_sid>
+    <srcip>1.1.1.1</srcip>
+    <description>sshd: authentication failed from IP 1.1.1.1.</description>
+    <group>authentication_failed,pci_dss_10.2.4,pci_dss_10.2.5,</group>
+  </rule>
+
+</group>
+
+<group name="SHINE,">
+
+<rule id="100100" level="6">
+  <if_sid>530</if_sid>
+  <match>^ossec: output: 'Conf File Number'</match>
+  <description>$(SHINE.conffilenumber)</description>
+</rule>
+
+<rule id="100101" level="6">
+  <if_sid>530</if_sid>
+  <match>^ossec: output: 'Total Package Number'</match>
+  <description>$(SHINE.totalpackagenumber)</description>
+</rule>
+
+<rule id="100102" level="6">
+  <if_sid>530</if_sid>
+  <match>^ossec: output: 'Used Bandwidth'</match>
+  <description>$(SHINE.usedbandwidth)</description>
+</rule>
+
+<rule id="100103" level="6">
+  <if_sid>530</if_sid>
+  <match>^ossec: output: 'Available Bandwidth'</match>
+  <description>$(SHINE.availablebandwidth)</description>
+</rule>
+
+<rule id="100104" level="6">
+  <if_sid>530</if_sid>
+  <match>^ossec: output: 'UDP received'</match>
+  <description>$(SHINE.udpreceived)</description>
+</rule>
+
+<rule id="100105" level="6">
+  <if_sid>530</if_sid>
+  <match>^ossec: output: 'UDP received errors'</match>
+  <description>$(SHINE.udpreceivederrors)</description>
+</rule>
+
+<rule id="100106" level="6">
+  <if_sid>530</if_sid>
+  <match>^ossec: output: 'TCP segments received'</match>
+  <description>$(SHINE.tcpsegmentsreceived)</description>
+</rule>
+
+<rule id="100107" level="6">
+  <if_sid>530</if_sid>
+  <match>^ossec: output: 'TCP segments retransmitted'</match>
+  <description>$(SHINE.tcpsegmentsretransmitted)</description>
+</rule>
+
+</group>

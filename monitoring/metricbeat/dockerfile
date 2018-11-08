@@ -1,0 +1,9 @@
+FROM docker.elastic.co/beats/metricbeat:6.4.1
+
+COPY --chown=metricbeat:root metricbeat.yml /usr/share/metricbeat/metricbeat.yml
+COPY --chown=metricbeat:root docker.yml /usr/share/metricbeat/modules.d/docker.yml
+COPY --chown=metricbeat:root system.yml /usr/share/metricbeat/modules.d/system.yml
+
+COPY logstash-forwarder.crt /etc/pki/tls/certs/logstash-forwarder.crt
+
+USER metricbeat

@@ -1,0 +1,1 @@
+docker build --network server --ulimit nofile=65536:65536 -t mylogstash .

@@ -1,0 +1,7 @@
+FROM docker.elastic.co/beats/packetbeat:6.4.1
+
+COPY --chown=packetbeat:root packetbeat.yml /usr/share/packetbeat/packetbeat.yml
+
+COPY logstash-forwarder.crt /etc/pki/tls/certs/logstash-forwarder.crt
+
+USER packetbeat

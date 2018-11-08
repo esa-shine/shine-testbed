@@ -1,0 +1,5 @@
+./startdocker.sh build network and set ageing 0 on bridges
+./build_all.sh Build all docker images
+./go_baby_go.sh run system
+
+View kibana on http://<yourhostip>:5601

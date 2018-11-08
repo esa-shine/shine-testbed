@@ -35,16 +35,32 @@ RUN npm install request ws watchr --save
 #RUN npm install request ws chokidar --save
 COPY server.js /usr/src/app
 # End code for NodeJS
+ARG WAZUH_AGENT_VERSION=3.6.1-1
 
+RUN apt-get update && apt-get upgrade -y 
+RUN apt-get install -y curl apt-transport-https lsb-release wget net-tools gnupg gnupg2 ifstat ethtool vim python-minimal
+
+RUN curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
+RUN echo "deb https://packages.wazuh.com/3.x/apt/ stable main" | tee /etc/apt/sources.list.d/wazuh.list
+RUN apt-get update
+RUN apt-get install -y wazuh-agent=${WAZUH_AGENT_VERSION} libopenscap8 xsltproc libpcap0.8
+
+ADD register.sh /register.sh
+RUN chmod +x /register.sh
+COPY ossec.conf /var/ossec/etc/ossec.conf
 
 #RUN echo "service ssh start" > /root/.bashrc
 #WORKDIR /
 #CMD    ["/usr/sbin/sshd", "-D"]
- COPY entry.sh /entry.sh
+COPY entry.sh /entry.sh
 # End code for NodeJS
-# ENTRYPOINT [ "/entry.sh" ]
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-CMD [ "npm", "start" ]
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["start"]
+
+
 
 # RUN apt-get update && apt-get install -y supervisor
 # RUN mkdir -p /var/log/supervisor

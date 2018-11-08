@@ -14,15 +14,20 @@ RUN \
             libgstreamer1.0-dev \
             libgstreamer-plugins-base1.0-dev
 ######wazuh agent
-#RUN apt-get install -y curl apt-transport-https lsb-release wget
-#RUN curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
-#RUN echo "deb https://packages.wazuh.com/3.x/apt/ stable main" | tee /etc/apt/sources.list.d/wazuh.list
-#RUN apt-get update
-#RUN apt-get install wazuh-agent
-#
-#ADD register.sh /register.sh
-#RUN chmod +x /register.sh
-#COPY ossec.conf /var/ossec/etc/ossec.conf
+ARG WAZUH_AGENT_VERSION=3.6.1-1
+
+# Updating image
+RUN apt-get update && apt-get upgrade -y 
+RUN apt-get install -y curl apt-transport-https lsb-release wget net-tools gnupg gnupg2 ifstat ethtool vim python-minimal
+
+RUN curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
+RUN echo "deb https://packages.wazuh.com/3.x/apt/ stable main" | tee /etc/apt/sources.list.d/wazuh.list
+RUN apt-get update
+RUN apt-get install -y wazuh-agent=${WAZUH_AGENT_VERSION} libopenscap8 xsltproc libpcap0.8
+
+ADD register.sh /register.sh
+RUN chmod +x /register.sh
+COPY ossec.conf /var/ossec/etc/ossec.conf
 #########
 
 VOLUME /tmp
