@@ -5,7 +5,7 @@ cd metricbeat
 sleep 1
 cd ..
 cd packetbeat
-./run
+./run.client
 sleep 1
 cd ..
 
