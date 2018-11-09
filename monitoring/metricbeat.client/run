@@ -2,4 +2,4 @@ docker run -d --net beats --ip 192.168.210.132 --ulimit nofile=65535:65535 \
 --volume=/proc:/hostfs/proc:ro \
 --volume=/sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro \
 --volume=/:/hostfs:ro \
---ulimit memlock=-1:-1 --hostname mymetricbeat --memory="2g" --memory-swap="2g" --memory-swappiness=0 mymetricbeat -system.hostfs=/hostfs
+--ulimit memlock=-1:-1 --hostname cache-metricbeat --memory="2g" --memory-swap="2g" --memory-swappiness=0 mymetricbeat -system.hostfs=/hostfs
