@@ -1,7 +1,7 @@
 #!/bin/bash
-cd metricbeat
+cd metricbeat.client
 ./build
 cd ..
-cd packetbeat
+cd packetbeat.client
 ./build
 cd ..

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cd metricbeat
+cd metricbeat.client
 ./run
 sleep 1
 cd ..
-cd packetbeat
+cd packetbeat.client
 ./run
 sleep 1
 cd ..

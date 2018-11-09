@@ -1,0 +1,5 @@
+docker create --net beats --ip 192.168.210.133 --ulimit nofile=65535:65535 --cap-add=NET_ADMIN --name=packetbeat \
+--ulimit memlock=-1:-1 --hostname mypacketbeat --memory="2g" --memory-swap="2g" --memory-swappiness=0 mypacketbeat
+docker network connect host packetbeat
+docker network connect bridge packetbeat
+docker start packetbeat
