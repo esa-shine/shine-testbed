@@ -8,4 +8,3 @@ cd packetbeat.client
 ./run
 sleep 1
 cd ..
-
