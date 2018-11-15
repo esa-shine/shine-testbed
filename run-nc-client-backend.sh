@@ -6,7 +6,7 @@ NC='\033[0m'
 
 BACKEND_PORT_BASE=8100
 
-IPNCServer=192.168.18.142
+IPNCServer=192.168.19.142
 # IPNCServer="$(docker inspect -f '{{ .NetworkSettings.Networks.shineNCnetwork.IPAddress }}' NC-dash-server)"
 
 # echo -e "${COLOR}\n>> Now the shineNCnetwork overlay network will be created.${NC}"
@@ -26,7 +26,7 @@ STORAGE= docker inspect -f "{{ .NetworkSettings.IPAddress }}" shine-storage
 
 echo $STORAGE	
 echo -e "${COLOR}\n>> Now the NC-shine-backend container will be created.${NC}"
-docker run --name NC-shine-backend -idt --network host -e NC_SERVER=192.168.18.142 -e STORAGE_MACHINE=172.17.0.1 --mount type=bind,source=/home/cache,target=/home/cache -d esashineproject/shine-backend
+docker run --name NC-shine-backend -idt --network host -e NC_SERVER=192.168.19.142 -e STORAGE_MACHINE=172.17.0.1 --mount type=bind,source=/home/cache,target=/home/cache -d esashineproject/shine-backend
 
 #docker run --name NC-shine-backend -idt -p 5022:22 -p 8100:8100 -p 12345:12345 -e NC_SERVER=192.168.18.142 -e STORAGE_MACHINE=172.17.0.1 -d esashineproject/shine-backend
 
