@@ -143,7 +143,7 @@ setup.kibana:
   # Scheme and port can be left out and will be set to the default (http and 5601)
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
-  host: "192.168.100.251:5601"
+  host: "192.168.19.121:5601"
 
 #============================= Elastic Cloud ==================================
 
@@ -175,7 +175,7 @@ setup.kibana:
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["192.168.100.251:5044"]
+  hosts: ["192.168.19.121:5044"]
   ssl:
     # List of root certificates for HTTPS server verifications
     certificate_authorities: ["/etc/pki/tls/certs/logstash-forwarder.crt"]

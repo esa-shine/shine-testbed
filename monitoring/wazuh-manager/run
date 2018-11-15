@@ -1,7 +1,5 @@
 docker run -d --net server --ulimit nofile=65535:65535 --ip 192.168.200.135 \
   --hostname wazuh-manager \
-  --publish 192.168.100.251:55000:55000/tcp \
-  --publish 192.168.100.251:1514:1514/udp \
-  --publish 192.168.19.254:55000:55000/tcp \
-  --publish 192.168.19.254:1514:1514/udp \
+  --publish 192.168.19.121:55000:55000/tcp \
+  --publish 192.168.19.121:1514:1514/udp \
   wazuhmanager

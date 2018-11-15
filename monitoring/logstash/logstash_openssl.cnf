@@ -224,8 +224,7 @@ keyUsage = nonRepudiation, digitalSignature, keyEncipherment
 [ alt_names ]
 IP.1 = 192.168.200.129
 IP.2 = 192.168.210.1
-IP.3 = 192.168.100.251
-IP.4 = 192.168.19.254
+IP.3 = 192.168.19.121
 
 [ v3_ca ]
 subjectAltName = @alt_names

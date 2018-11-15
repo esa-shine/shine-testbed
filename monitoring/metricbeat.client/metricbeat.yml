@@ -9,14 +9,14 @@ setup.template.settings:
 ### Logstash as output
 output.logstash:
   # The Logstash hosts
-  hosts: ["192.168.100.251:5044"]
+  hosts: ["192.168.19.121:5044"]
 
 output.logstash.ssl:
   # List of root certificates for HTTPS server verifications
   certificate_authorities: ["/etc/pki/tls/certs/logstash-forwarder.crt"]
 
 setup.kibana:
-  host: "192.168.100.251:5601"
+  host: "192.168.19.121:5601"
 
   #protocol: "https"
   #username: "elastic"

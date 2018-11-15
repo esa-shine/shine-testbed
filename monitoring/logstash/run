@@ -4,7 +4,6 @@ docker run -d --net server --ip 192.168.200.129 --ulimit nofile=65536:65536 \
 --volume $PWD/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml \
 --volume $PWD/logstash_pki/private:/etc/pki/tls/private/ \
 --volume $PWD/logstash_pki/certs:/etc/pki/tls/certs/ \
---publish 192.168.100.251:5044:5044/tcp \
---publish 192.168.19.254:5044:5044/tcp \
+--publish 192.168.19.121:5044:5044/tcp \
 --publish 192.168.210.1:5044:5044/tcp \
 mylogstash

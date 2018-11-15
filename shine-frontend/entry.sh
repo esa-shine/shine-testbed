@@ -1,5 +1,5 @@
 #!/bin/sh
-WAZUH_MANAGER=192.168.100.251
+WAZUH_MANAGER=192.168.19.121
 #WAZUH_AGENT=`ifconfig -a | sed '1,1d' | sed '2,$d' | awk '{ print $2 }'`
 WAZUH_AGENT=`hostname`
 USER="wazuh"
