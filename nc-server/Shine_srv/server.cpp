@@ -714,7 +714,7 @@ void * TaskTrasm(void * a){
 			//delete[] copy;
 
 		/*	aggiorno la matrice */
-		usleep(100); //ADDED FABIO
+		usleep(10000); //ADDED FABIO
 
 //		cout << "data.Ind[id_utente][id_file][id_chunck]: " << "data.Ind[" << id_utente << "][" << id_file << "][" << id_chunck << "] da 0 diventa 1 " << data.Ind[id_utente][id_file][id_chunck] << endl;
 //		if(!id_file)
