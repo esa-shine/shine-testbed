@@ -8,5 +8,5 @@ docker network create --ipv6 --driver=bridge --subnet 192.168.220.0/24 --gateway
 brctl setageing agents 0
 
 iptables -P FORWARD ACCEPT
-iptables -D FORWARD -j DOCKER-ISOLATION
+iptables -D FORWARD -j DOCKER-ISOLATION-STAGE-1
 

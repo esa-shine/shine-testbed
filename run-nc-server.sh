@@ -35,6 +35,9 @@ pass="XCcube"
 
 sshpass -p "$pass" scp id_rsa.pub  opensand@192.168.19.101:/home/opensand/Desktop
 
+sshpass -p "$pass" scp -P 19000 id_rsa.pub  opensand@192.168.19.110:/home/opensand/Desktop
+
+
 
 echo -e "${BOLD}\n>> Launch NC server.${NC}"
 
