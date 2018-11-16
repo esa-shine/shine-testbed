@@ -1,1 +1,1 @@
-docker build --network beats --ulimit nofile=65535:65535 --ulimit memlock=-1:-1 -t mypacketbeat .
+docker build --ulimit nofile=65535:65535 --ulimit memlock=-1:-1 -t mypacketbeat .
