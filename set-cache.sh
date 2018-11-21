@@ -14,6 +14,6 @@ sshpass -p "$pass" scp -r ConfigFile/clt  opensand@192.168.19.101:/home/opensand
 
 
 
-sshpass -p "XCcube" scp -r mpd-s2/*  opensand@192.168.19.201:/home/opensand/Desktop/mpd/
-sshpass -p "XCcube" scp -r mlst  opensand@192.168.19.201:/home/opensand/Desktop/
-sshpass -p "XCcube" scp -r ConfigFile/clt  opensand@192.168.19.201:/home/opensand/Desktop/
+sshpass -p "$pass" scp -r mpd-s2/*  opensand@192.168.19.201:/home/opensand/Desktop/mpd/
+sshpass -p "$pass" scp -r mlst  opensand@192.168.19.201:/home/opensand/Desktop/
+sshpass -p "$pass" scp -r ConfigFile/clt  opensand@192.168.19.201:/home/opensand/Desktop/
