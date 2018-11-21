@@ -12,3 +12,5 @@ docker run -idt --name dashpackager packager:v3
 echo -e "${COLOR}\n>> To create DASH content you must enter the container using the following commands and run the last command for each media file:${NC}"
 
 docker exec -it dashpackager sh media/segments-encrypt-contents.sh
+
+docker exec -it dashpackager sh media/segments-encrypt-contents.v2.sh
