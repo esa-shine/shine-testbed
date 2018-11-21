@@ -16,6 +16,7 @@ docker cp ${IDPackager}:/storagedash .
 cp -R storagedash/* mp4
 rm -R storagedash
 docker cp ${IDPackager}:/shaka_packager/mpd .
+docker cp ${IDPackager}:/shaka_packager/mpd-s2 .
 
 echo -e "${COLOR}\n>> Now the files MediaList.json will be created.${NC}"
 
